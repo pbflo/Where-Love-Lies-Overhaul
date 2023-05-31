@@ -15,6 +15,8 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Updated to match "Map262" (Hidden Ritual) from Rejuvenation
 - Map016 - Uncharted Woods (Route 3 Upper)
   - Updated to match "Map067" (Route 3) from Rejuvenation
+- Map018 - Uncharted Cave (Carotos Entrance)
+  - Updated to match "Map119" (Carotos Mountain) from Rejuvenation
 - Map021 - Uncharted Woods (Route 3 Lower)
   - Updated to match "Map071" (Route 3) from Rejuvenation
 - Map022 - Uncharted Woods (Route 3 Middle)
@@ -27,6 +29,10 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Updated to match "Map315" (Rose Theatre) from Rejuvenation
 
 ### Tilesets
+- "Carotos Mountain"
+  - Added small hole from Rejuvenation (recolored)
+  - Added deep water shadow from Reuvenation (recolored)
+  - Added water tile (to prevent following Pokémon from glitching out)
 - "Chrisola Hotel"
   - Copied from "Chrisola Hotel" from Rejuvenation and added the differences from WLL
   - Added cracked/broken variant for new floors
@@ -44,6 +50,9 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 - "Sheridan_2"
   - Copied from "Sheridan_2" from Rejuvenation and added the differences from WLL
   - Added "DirtDark" auto-tile
+  - Re-Added bolder and hole 
+  - Re-Added centered cherry tree
+  - Re-Added barrier slopes (recolored)
 
 ### Pictures
 - "TheEnd_1" & "TheEnd_2"
