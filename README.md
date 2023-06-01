@@ -21,8 +21,13 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Updated to match "Map071" (Route 3) from Rejuvenation
 - Map022 - Uncharted Woods (Route 3 Middle)
   - Updated to match "Map069" (Route 3) from Rejuvenation
+- Map024 - Forest Cliff (Bolder)
+  - Updated to match "Map424" (Sheridan Arena) from Rejuvenation
+  - Added event (21|15) for wider walkway **\[UNTESTED\]**
+  - Edited event (19|15) & (20|15) move routes for wider walkway **\[UNTESTED\]**
 - Map067 - Sheridan Arena (Present Day After Returning)
   - Updated to match "Map424" (Sheridan Arena) from Rejuvenation
+  - Edited event (20|18) for new door animation **\[UNTESTED\]**
 - Map091 - Sheridan Arena (True Ending)
   - Updated to match "Map424" (Sheridan Arena) from Rejuvenation
 - Map092 - Rose Theatre
