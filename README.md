@@ -29,6 +29,10 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 - Map028 - Forest Cliff (Hole)
   - Updated to match "Map424" (Sheridan Arena) from Rejuvenation
   - Updated a few events to work with the environment
+- Map033 - Wedding Cutscene
+  - Updated to match "Map424" (Sheridan Arena) from Rejuvenation
+  - Updated event (19|17) to show the right positions
+  - Moved event (19|15) to (21|15) to make use of the space
 - Map067 - Sheridan Arena (Present Day After Returning)
   - Updated to match "Map424" (Sheridan Arena) from Rejuvenation
   - Edited event (20|18) for new door animation
@@ -64,7 +68,8 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Added "DirtDark" auto-tile
   - Re-Added bolder and hole 
   - Re-Added centered cherry tree
-  - Re-Added barrier slopes (recolored)
+  - Re-Added barrier slopes (retextured)
+  - Re-Centered Taelia and Kenneth graphics
 
 ### Pictures
 - "TheEnd_1" & "TheEnd_2"
