@@ -13,6 +13,10 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Updated to match "Map250" (Marble Mansion) from Rejuvenation
 - Map005 - Hidden Ritual
   - Updated to match "Map262" (Hidden Ritual) from Rejuvenation
+- Map014 - Uncharted Field
+  - Started Updating to match "Map199" (Route 2) from Rejuvenation (UNFINISHED)
+  - ToDo: Move/Edit Events
+  - ToDo: Edit Fooliage & other Decorations
 - Map016 - Uncharted Woods (Route 3 Upper)
   - Updated to match "Map067" (Route 3) from Rejuvenation
 - Map018 - Uncharted Cave (Carotos Entrance)
@@ -43,6 +47,9 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Updated to match "Map424" (Sheridan Arena) from Rejuvenation
 - Map092 - Rose Theatre
   - Updated to match "Map315" (Rose Theatre) from Rejuvenation
+- Map113 - Uncharted Cave
+  - Added to have a way to the water in the new Map014 (UNFINISHED)
+  - ToDo: Decorations
 
 ### Tilesets
 - "Carotos Mountain"
@@ -58,10 +65,15 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Added floor border variants from Rejuvenation
 - "GearenCity Real"
   - Updated "Mysterious Mansion" facade
-- Grand Dream City Interiors
+- "Goldenwood Cave"
+  - Adds some Rocks for Gemstream Mine 
+- "Grand Dream City Interiors"
   - Copied from "Grand Dream City Interiors" from Rejuvenation
+- "Route 2_new"
+  - Copied from "Route 2" from Rejuvenation
+  - ToDo: Edit foliage
 - "Route 3"
-  - Copied from "Roue 3" from Rejuvenation
+  - Copied from "Route 3" from Rejuvenation
   - Added cutout version of default grass
 - "Sheridan_2"
   - Copied from "Sheridan_2" from Rejuvenation and added the differences from WLL
