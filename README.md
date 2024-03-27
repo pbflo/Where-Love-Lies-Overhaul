@@ -9,15 +9,15 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 
 - [x] `Map2 - Gearen City`
   - [x] Recolor Marble Mansion
-- [ ] `Map4 - Mysterious Mansion`
+- [x] `Map4 - Mysterious Mansion`
   - [x] Rebase on `Map250 - Marble Mansion`
-  - [ ] *V13.5* Replace Family Picture
+  - [x] *V13.5* Replace Family Picture
 - [x] `Map5 - Hidden Ritual`
   - [x] Rebase on `Map262 - Hidden Ritual`
-- [ ] `Map8 - ???`
-  - [ ] Rebase on `Map200 - Cliffside Grave`
-- [ ] `Map9 - ??? (Cutscene)`
-  - [ ] Rebase on `Map200 - Cliffside Grave`
+- [x] `Map8 - ???`
+  - [x] Rebase on `Map200 - Cliffside Grave`
+- [x] `Map9 - ??? (Cutscene)`
+  - [x] Rebase on `Map200 - Cliffside Grave`
 </details>
 
 <details>
