@@ -14,9 +14,8 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 - Map005 - Hidden Ritual
   - Updated to match "Map262" (Hidden Ritual) from Rejuvenation
 - Map014 - Uncharted Field
-  - Started Updating to match "Map199" (Route 2) from Rejuvenation (UNFINISHED)
-  - ToDo: Move/Edit Events
-  - ToDo: Edit Fooliage & other Decorations
+  - Updated to match "Map199" (Route 2) from Rejuvenation
+  - Updated event (58|29) move routes for different space (UNTESTED)
 - Map016 - Uncharted Woods (Route 3 Upper)
   - Updated to match "Map067" (Route 3) from Rejuvenation
 - Map018 - Uncharted Cave (Carotos Entrance)
@@ -48,8 +47,7 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 - Map092 - Rose Theatre
   - Updated to match "Map315" (Rose Theatre) from Rejuvenation
 - Map113 - Uncharted Cave
-  - Added to have a way to the water in the new Map014 (UNFINISHED)
-  - ToDo: Decorations
+  - Added to have a way to the water in the new Map014
 
 ### Tilesets
 - "Carotos Mountain"
@@ -71,14 +69,14 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - Copied from "Grand Dream City Interiors" from Rejuvenation
 - "Route 2_new"
   - Copied from "Route 2" from Rejuvenation
-  - ToDo: Edit foliage
+  - Edit foliage to be various shades of green
 - "Route 3"
   - Copied from "Route 3" from Rejuvenation
   - Added cutout version of default grass
 - "Sheridan_2"
   - Copied from "Sheridan_2" from Rejuvenation and added the differences from WLL
   - Added "DirtDark" auto-tile
-  - Re-Added bolder and hole 
+  - Re-Added boulder and hole 
   - Re-Added centered cherry tree
   - Re-Added barrier slopes (retextured)
   - Re-Centered Taelia and Kenneth graphics
