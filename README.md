@@ -37,8 +37,8 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [x] Rebase on `Map71 - Route 3`
 - [x] `Map22 - Uncharted Woods`
   - [x] Rebase on `Map69 - Route 3`
-- [ ] `Map23 - Thief's Stronghold`
-  - [ ] Rebase on `Map82 - Goldenleaf Town`
+- [x] `Map23 - Thief's Stronghold`
+  - [x] Rebase on `Map82 - Goldenleaf Town`
 - [x] `Map24 - Forest Cliff`
   - [x] Rebase on `Map424 - Sheridan Arena`
 - [ ] `Map26 - Sheridan Village`
@@ -131,7 +131,7 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 - [x] `Map91 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
 - [ ] `Map92 - Rose Theatre`
-  - [x] Rebase on `Map315 - Sheridan Arena`
+  - [x] Rebase on `Map315 - Rose Theatre`
   - [ ] *V13.5* Retexture
 - [ ] `Map93 - My Memory`
   - [ ] Rebase on `Map7 - Sensei's House`
@@ -167,6 +167,10 @@ General: Fix [Mistakes](Mistakes.md)
   - Updated to match `"Map250" (Marble Mansion)` from Rejuvenation
 - **Map005 - Hidden Ritual**
   - Updated to match `"Map262" (Hidden Ritual)` from Rejuvenation
+- **Map008 - ??? (Cliffside Grave)**
+  - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
+- **Map009 - ??? (Cliffside Grave - Cutscene)**
+  - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
 - **Map014 - Uncharted Field**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(58|29)` move routes for different space (UNTESTED)
@@ -176,8 +180,11 @@ General: Fix [Mistakes](Mistakes.md)
   - Updated to match `"Map119" (Carotos Mountain)` from Rejuvenation
 - **Map021 - Uncharted Woods (Route 3 Lower)**
   - Updated to match `"Map071" (Route 3)` from Rejuvenation
+  - Edited event `(9|30)` & `(9|31)` for correct connection to the new Thief's Stronghold
 - **Map022 - Uncharted Woods (Route 3 Middle)**
   - Updated to match `"Map069" (Route 3)` from Rejuvenation
+- **Map023 - Thief's Stronghold (Outside)**
+  - Updated to match `"Map82" (Goldenleaf Town)` from Rejuvenation
 - **Map024 - Forest Cliff (Boulder)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Added event `(21|15)` for wider walkway
@@ -222,8 +229,14 @@ General: Fix [Mistakes](Mistakes.md)
   - Added floor border variants from Rejuvenation
 - **"GearenCity Real"**
   - Updated `"Mysterious Mansion"` facade
+- **"Goldenleaf Forest"**
+  - Adds green trees
+  - Adds new stairs
+  - Adds rock-border with grass
+  - Adds stone floor variations
+  - Recolors red small tree
 - **"Goldenwood Cave"**
-  - Adds some Rocks for `"Gemstream Mine"`
+  - Adds some rocks for `"Gemstream Mine"`
 - **"Grand Dream City Interiors"**
   - Copied from `"Grand Dream City Interiors"` from Rejuvenation
 - **"Route 2_new"**
