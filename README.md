@@ -25,6 +25,7 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 
 - [x] `Map14 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
+  - [x] Add `Gemstream Mine` area
 - [ ] `Map15 - Destroyed Village`
   - [ ] *V13.5* Rebase on `Map432 - River's End`
 - [x] `Map16 - Uncharted Woods`
@@ -95,8 +96,9 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [ ] Rebase on `Map424 - Sheridan Arena`
 - [x] `Map55 - Gearen City`
   - [x] Recolor Marble Mansion
-- [ ] `Map56 - Route 2`
-  - [ ] Rebase on `Map199 - Route 2`
+- [x] `Map56 - Route 2`
+  - [x] Rebase on `Map199 - Route 2`
+  - [x] Add `Gemstream Mine` area
 - [ ] `Map57 - Wispy Tower`
   - [ ] Rebase on `Map102 - Wispy Tower` (Recolor some trees)
 - [ ] `Map63 - Spring of Purification`
@@ -174,6 +176,8 @@ General: Fix [Mistakes](Mistakes.md)
 - **Map014 - Uncharted Field**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(58|29)` move routes for different space (UNTESTED)
+  - Adds some pink trees & grass around the big one
+  - Replaced tree with younger version
 - **Map016 - Uncharted Woods (Route 3 Upper)**
   - Updated to match `"Map067" (Route 3)` from Rejuvenation
 - **Map018 - Uncharted Cave (Carotos Entrance)**
@@ -199,6 +203,14 @@ General: Fix [Mistakes](Mistakes.md)
   - Moved event `(19|15)` to `(21|15)` to make use of the space
 - **Map041 - Sensei's Garden**
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
+- **Map056 - Route 2**
+  - Updated to match `"Map199" (Route 2)` from Rejuvenation
+  - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
+  - Added event `(56|63)` & `(57|62)` to aknowledge the Kecleon Bazaar
+  - For alternate route:
+    - Place non-traversable rail at `(69|61)`
+	- Remove trees at `(47|65)` & `(45|70)`
+	- In `Map118` place traversable rail at `(10|15)`
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(20|18)` for new door animation
@@ -210,7 +222,10 @@ General: Fix [Mistakes](Mistakes.md)
 - **Map092 - Rose Theatre**
   - Updated to match `"Map315" (Rose Theatre)` from Rejuvenation
 - **Map113 - Uncharted Cave**
-  - Added to have a way to the water in the new `Map014 (Uncharted Field)`
+  - Added based on `Map133 (Gemstream Mine)` to have a way to the water in the new `Map014 (Uncharted Field)`
+- **Map118 - Gemstream Mine**
+  - Added based on `Map133 (Gemstream Mine)` to have a way to the tree in the new `Map056 (Route 2)`
+  - Edited event `(31|37)` because the exit is blocked
 </details>
 
 <details>
@@ -236,12 +251,14 @@ General: Fix [Mistakes](Mistakes.md)
   - Adds stone floor variations
   - Recolors red small tree
 - **"Goldenwood Cave"**
-  - Adds some rocks for `"Gemstream Mine"`
+  - Adds some rocks, ladders, crystals, entrances & rails for `"Gemstream Mine"`
 - **"Grand Dream City Interiors"**
   - Copied from `"Grand Dream City Interiors"` from Rejuvenation
 - **"Route 2_new"**
   - Copied from `"Route 2"` from Rejuvenation
   - Edit foliage to be various shades of green
+  - Adds back pink trees & grass for transformation
+  - Created a younger tree design for `"Uncharted Field"`
 - **"Route 3"**
   - Copied from `"Route 3"` from Rejuvenation
   - Added cutout version of default grass
