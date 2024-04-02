@@ -23,17 +23,19 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 <details>
   <summary>Chapter 2 - The Line that Bonds us</summary>
 
+- [ ] *`Map12 - Uncharted Shore*
+  - [ ] More shades of trees (to match `Route 2`)
 - [x] `Map14 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
   - [x] Add `Gemstream Mine` area
-- [ ] `Map15 - Destroyed Village`
-  - [ ] *V13.5* Rebase on `Map432 - River's End`
+- [x] `Map15 - Destroyed Village`
+  - [x] *V13.5* Rebase on `Map432 - River's End`
 - [x] `Map16 - Uncharted Woods`
   - [x] Rebase on `Map67 - Route 3`
 - [ ] `Map17 - Hidden Forest`
   - [ ] Rebase on `Map423 - Sheridan Village`
 - [ ] `Map18 - Uncharted Cave`
-  - [ ] Rebase on `Map119 - Carotos Mountain`
+  - [ ] *V13.5* Rebase (again) on `Map119 - Carotos Mountain`
 - [x] `Map21 - Uncharted Woods`
   - [x] Rebase on `Map71 - Route 3`
 - [x] `Map22 - Uncharted Woods`
@@ -178,13 +180,21 @@ General: Fix [Mistakes](Mistakes.md)
   - Updated event `(58|29)` move routes for different space (UNTESTED)
   - Adds some pink trees & grass around the big one
   - Replaced tree with younger version
+  - Adds transition events `(57|7)` & `(58|7)` to `"Map015" (Destroyed Village)`
+- **Map015 - Destroyed Village**
+  - Updated to match `"Map432" (River's End)` from Rejuvenation
 - **Map016 - Uncharted Woods (Route 3 Upper)**
   - Updated to match `"Map067" (Route 3)` from Rejuvenation
 - **Map018 - Uncharted Cave (Carotos Entrance)**
   - Updated to match `"Map119" (Carotos Mountain)` from Rejuvenation
+- **Map019 - Uncharted Cave (Route 2)**
+  - Changed "Transfer Player" of event `(55|10)` to match the new `"Map015" (Destroyed Village)`
+- **Map020 - Cella's House**
+  - Changed "Transfer Player" of event `(7|16)` & `(27|16)` to match the new `"Map015" (Destroyed Village)`
 - **Map021 - Uncharted Woods (Route 3 Lower)**
   - Updated to match `"Map071" (Route 3)` from Rejuvenation
-  - Edited event `(9|30)` & `(9|31)` for correct connection to the new Thief's Stronghold
+  - Edited events `(9|30)` & `(9|31)` for correct connection to the new `Thief's Stronghold`
+  - Adds events `(23|33)`, `(24|33)` & `(25|33)` for connection to the new `Destroyed Village` (UNTESTED IN BOTH DIRECTIONS)
 - **Map022 - Uncharted Woods (Route 3 Middle)**
   - Updated to match `"Map069" (Route 3)` from Rejuvenation
 - **Map023 - Thief's Stronghold (Outside)**
@@ -210,6 +220,7 @@ General: Fix [Mistakes](Mistakes.md)
   - For alternate route:
     - Place non-traversable rail at `(69|61)`
 	- Remove trees at `(47|65)` & `(45|70)`
+	- Reposition event from `(78|59)` to `(38|53)`
 	- In `Map118` place traversable rail at `(10|15)`
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
@@ -259,6 +270,7 @@ General: Fix [Mistakes](Mistakes.md)
   - Edit foliage to be various shades of green
   - Adds back pink trees & grass for transformation
   - Created a younger tree design for `"Uncharted Field"`
+  - Copied destroyed house & family from original `"Route 2"`
 - **"Route 3"**
   - Copied from `"Route 3"` from Rejuvenation
   - Added cutout version of default grass
