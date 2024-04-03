@@ -32,10 +32,10 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [x] *V13.5* Rebase on `Map432 - River's End`
 - [x] `Map16 - Uncharted Woods`
   - [x] Rebase on `Map67 - Route 3`
-- [ ] `Map17 - Hidden Forest`
-  - [ ] Rebase on `Map423 - Sheridan Village`
-- [ ] `Map18 - Uncharted Cave`
-  - [ ] *V13.5* Rebase (again) on `Map119 - Carotos Mountain`
+- [x] `Map17 - Hidden Forest`
+  - [x] Rebase on `Map423 - Sheridan Village`
+- [x] `Map18 - Uncharted Cave`
+  - [x] *V13.5* Rebase (again) on `Map119 - Carotos Mountain`
 - [x] `Map21 - Uncharted Woods`
   - [x] Rebase on `Map71 - Route 3`
 - [x] `Map22 - Uncharted Woods`
@@ -177,7 +177,7 @@ General: Fix [Mistakes](Mistakes.md)
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
 - **Map014 - Uncharted Field**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
-  - Updated event `(58|29)` move routes for different space (UNTESTED)
+  - Updated move routes of event `(58|29)` for different space (UNTESTED)
   - Adds some pink trees & grass around the big one
   - Replaced tree with younger version
   - Adds transition events `(57|7)` & `(58|7)` to `"Map015" (Destroyed Village)`
@@ -185,6 +185,10 @@ General: Fix [Mistakes](Mistakes.md)
   - Updated to match `"Map432" (River's End)` from Rejuvenation
 - **Map016 - Uncharted Woods (Route 3 Upper)**
   - Updated to match `"Map067" (Route 3)` from Rejuvenation
+   - Edited events `(45|6)` & `(45|7)` for correct connection to the new `Hidden Forest` & `Sheridan Village`
+- **Map017 - Hidden Forest**
+  - Updated to match `"Map423 (Sheridan Village)` from Rejuvenation
+  - Updated move routes of events `(47|38)`, `(48|38)`, `(49|38)`, `(54|38)`, `(55|38)` & `(56|38)`  for different space (UNTESTED)
 - **Map018 - Uncharted Cave (Carotos Entrance)**
   - Updated to match `"Map119" (Carotos Mountain)` from Rejuvenation
 - **Map019 - Uncharted Cave (Route 2)**
@@ -246,6 +250,7 @@ General: Fix [Mistakes](Mistakes.md)
   - Added small hole from Rejuvenation (recolored)
   - Added deep water shadow from Rejuvenation (recolored)
   - Added water tile (to prevent following Pokémon from glitching out)
+  - Recolors a large rock
 - **"Chrisola Hotel"**
   - Copied from `"Chrisola Hotel"` from Rejuvenation and added the differences from WLL
   - Added cracked/broken variant for new floors
