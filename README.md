@@ -23,7 +23,7 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 <details>
   <summary>Chapter 2 - The Line that Bonds us</summary>
 
-- [ ] *`Map12 - Uncharted Shore*
+- [ ] *`Map12 - Uncharted Forest`*
   - [ ] More shades of trees (to match `Route 2`)
 - [x] `Map14 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
@@ -34,6 +34,7 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [x] Rebase on `Map67 - Route 3`
 - [x] `Map17 - Hidden Forest`
   - [x] Rebase on `Map423 - Sheridan Village`
+  - [x] Changed dialog for building design
 - [x] `Map18 - Uncharted Cave`
   - [x] *V13.5* Rebase (again) on `Map119 - Carotos Mountain`
 - [x] `Map21 - Uncharted Woods`
@@ -44,11 +45,11 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [x] Rebase on `Map82 - Goldenleaf Town`
 - [x] `Map24 - Forest Cliff`
   - [x] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map26 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
-  - [ ] Change Dialog for new spring entrance
-- [ ] `Map27 - Taelia'S House`
-  - [ ] Rebase on `Map425 - Sheridan Village`
+- [x] `Map26 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
+  - [x] Change dialog for new spring entrance
+- [x] `Map27 - Taelia's House`
+  - [x] Rebase on `Map425 - Sheridan Village`
 - [x] `Map28 - Forest Cliff`
   - [x] Rebase on `Map424 - Sheridan Arena`
 - [ ] `Map29 - Sheridan Village`
@@ -144,7 +145,8 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 </details>
 <br>
 
-General: Fix [Mistakes](Mistakes.md)
+General: 
+- [ ] Fix [Mistakes](Mistakes.md)
 <br>
 
 <details>
@@ -183,6 +185,7 @@ General: Fix [Mistakes](Mistakes.md)
   - Adds transition events `(57|7)` & `(58|7)` to `"Map015" (Destroyed Village)`
 - **Map015 - Destroyed Village**
   - Updated to match `"Map432" (River's End)` from Rejuvenation
+  - Updated "Transfer Player" commands
 - **Map016 - Uncharted Woods (Route 3 Upper)**
   - Updated to match `"Map067" (Route 3)` from Rejuvenation
    - Edited events `(45|6)` & `(45|7)` for correct connection to the new `Hidden Forest` & `Sheridan Village`
@@ -208,6 +211,13 @@ General: Fix [Mistakes](Mistakes.md)
   - Added event `(21|15)` for wider walkway
   - Edited event `(19|15)` & `(20|15)` move routes for wider walkway
   - Edited event `(19|15)`, `(20|15)` & `(21|15)` so Taelia does not get stuck when seeking cover
+- **Map026 - Sheridan Village (Stage 1)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Changed dialog for new spring entrance
+  - Updated event `(48|45)` & `(35|33)` for new positions
+- **Map027 - Taelia's House**
+  - Updated to match `"Map425 - Sheridan Village` from Rejuvenation
+  - Updated "Transfer Player" commands
 - **Map028 - Forest Cliff (Hole)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated a few events to work with the environment
@@ -287,6 +297,8 @@ General: Fix [Mistakes](Mistakes.md)
   - Re-Added barrier slopes (retextured)
   - Re-Centered Taelia and Kenneth graphics
   - Adds Cherry Blossom for Sensei's Garden
+- **"SheridanInside"**
+  - Copied from different parts of `"Multi-Interiors"` from Rejuvenation
 </details>
 
 <details>
