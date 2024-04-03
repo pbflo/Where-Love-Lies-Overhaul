@@ -34,7 +34,7 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [x] Rebase on `Map67 - Route 3`
 - [x] `Map17 - Hidden Forest`
   - [x] Rebase on `Map423 - Sheridan Village`
-  - [x] Changed dialog for building design
+  - [x] Change dialog for building design
 - [x] `Map18 - Uncharted Cave`
   - [x] *V13.5* Rebase (again) on `Map119 - Carotos Mountain`
 - [x] `Map21 - Uncharted Woods`
@@ -52,10 +52,10 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [x] Rebase on `Map425 - Sheridan Village`
 - [x] `Map28 - Forest Cliff`
   - [x] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map29 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
-- [ ] `Map30 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
+- [x] `Map29 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
+- [x] `Map30 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
 - [ ] `Map31 - Sheridan Village`
   - [ ] Rebase on `Map423 - Sheridan Village`
 - [ ] `Map32 - Spring of Purification`
@@ -221,6 +221,12 @@ General:
 - **Map028 - Forest Cliff (Hole)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated a few events to work with the environment
+- **Map029 - Sheridan Village (Stage 2)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Updated event `(35|28)` for new positions
+- **Map029 - Sheridan Village (Stage 3)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Updated event `(17|32)` for new positions
 - **Map033 - Wedding Cutscene**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated event `(19|17)` to show the right positions
