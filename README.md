@@ -1,7 +1,7 @@
 # Where Love Lies Overhaul
 
 ## Goal
-The main goal is to update the maps to match the current version of "Pokémon Rejuvenation" (currently V13.5) and to fix some bugs and issues.
+The main goal is to update the maps to match the current version of Rejuvenation (currently V13.5) and to fix some bugs and issues.
 
 ## ToDo's
 <details>
@@ -135,9 +135,9 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [ ] Rebase on `Map423 - Sheridan Village`
 - [x] `Map91 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map92 - Rose Theatre`
+- [x] `Map92 - Rose Theatre`
   - [x] Rebase on `Map315 - Rose Theatre`
-  - [ ] *V13.5* Retexture
+  - [x] *V13.5* Retexture
 - [ ] `Map93 - My Memory`
   - [ ] Rebase on `Map7 - Sensei's House`
 - [ ] `Map94 - Uncharted Field`
@@ -293,8 +293,8 @@ General:
   - Recolors red small tree
 - **"Goldenwood Cave"**
   - Adds some rocks, ladders, crystals, entrances & rails for `"Gemstream Mine"`
-- **"Grand Dream City Interiors"**
-  - Copied from `"Grand Dream City Interiors"` from Rejuvenation
+- **"RoseTheatre"**
+  - Copied selection from `"Grand Dream City Interiors"` from Rejuvenation
 - **"Route 2_1"**
   - Adds trees from `"Route 2_new"`
 - **"Route 2_new"**
@@ -321,6 +321,6 @@ General:
 <details>
   <summary>Pictures</summary>
 
-- **"TheEnd_1" & "TheEnd_2"**
-  - Moved family a pixel up to be aligned right and not jump around
+- **"TheEnd_1", "TheEnd_2" & "TheEnd_3"**
+  - New images based on new `Route 2` environment
 </details>
