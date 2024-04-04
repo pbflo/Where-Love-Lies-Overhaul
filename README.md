@@ -71,8 +71,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map7 - Sensei's House`
 - [ ] `Map38 - Sheridan Village`
   - [ ] Rebase on `Map423 - Sheridan Village`
-- [ ] `Map39 - Sheridan Arena`
-  - [ ] Rebase on `Map424 - Sheridan Arena`
+- [x] `Map39 - Sheridan Arena`
+  - [x] Rebase on `Map424 - Sheridan Arena`
 - [ ] `Map40 - Sheridan Village`
   - [ ] Rebase on `Map425 - Sheridan Village`
 - [x] `Map41 - Sensei's Garden`
@@ -243,6 +243,9 @@ General:
 - **Map036 - Sensei's House (After Timeskip)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(9|3)`, `(9|12)`, `(9|18)`, `(3|20)` & `(30|3)` for new positions
+- **Map039 - Sheridan Arena (After Timeskip)**
+  - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
+  - Updated events `(20|11)` & `(20|32)` for new positions
 - **Map041 - Sensei's Garden**
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
 - **Map056 - Route 2**
