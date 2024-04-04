@@ -48,16 +48,19 @@ The main goal is to update the maps to match the current version of Rejuvenation
 - [x] `Map26 - Sheridan Village`
   - [x] Rebase on `Map423 - Sheridan Village`
   - [x] Change dialog for new spring entrance
+  - [x] Fix teleport to map with destroyed rock
 - [x] `Map27 - Taelia's House`
   - [x] Rebase on `Map425 - Sheridan Village`
 - [x] `Map28 - Forest Cliff`
   - [x] Rebase on `Map424 - Sheridan Arena`
+  - [x] Change dialog for new spring location
 - [x] `Map29 - Sheridan Village`
   - [x] Rebase on `Map423 - Sheridan Village`
 - [x] `Map30 - Sheridan Village`
   - [x] Rebase on `Map423 - Sheridan Village`
 - [x] `Map31 - Sheridan Village`
   - [x] Rebase on `Map423 - Sheridan Village`
+  - [x] Fix teleport to map with destroyed rock
 - [x] `Map32 - Spring of Purification`
   - [x] Rebase on `Map206 - Spring of Purification`
 - [x] `Map33 - Wedding Cutscene`
@@ -197,6 +200,7 @@ General:
   - Updated event `(9|39)` for different space
 - **Map018 - Uncharted Cave (Carotos Entrance)**
   - Updated to match `"Map119" (Carotos Mountain)` from Rejuvenation
+  - Changed dialog for new spring location
 - **Map019 - Uncharted Cave (Route 2)**
   - Changed "Transfer Player" of event `(55|10)` to match the new `"Map015" (Destroyed Village)`
 - **Map020 - Cella's House**
@@ -218,6 +222,7 @@ General:
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Changed dialog for new spring entrance
   - Updated event `(48|45)` & `(35|33)` for new positions
+  - Fixed teleports in events `(29|6)`, `(30|6)`, `(40|6)` & `(41|6)` to lead to the forest cliff with the destroyed rock after the event
 - **Map027 - Taelia's House**
   - Updated to match `"Map425 - Sheridan Village` from Rejuvenation
   - Updated "Transfer Player" commands
@@ -233,6 +238,7 @@ General:
 - **Map031 - Sheridan Village (Stage 3 - 2)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Removed Trainer
+  - Fixed teleports in events `(29|6)`, `(30|6)`, `(40|6)` & `(41|6)` to lead to the forest cliff with the destroyed rock
 - **Map032 - Spring of Purification (Before Timeskip)**
   - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
   - Updated events `(18|24)`, `(19|24)` & `(20|24)` for new positions
