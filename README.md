@@ -23,8 +23,8 @@ The main goal is to update the maps to match the current version of "Pokémon Re
 <details>
   <summary>Chapter 2 - The Line that Bonds us</summary>
 
-- [ ] *`Map12 - Uncharted Forest`*
-  - [ ] More shades of trees (to match `Route 2`)
+- [x] *`Map12 - Uncharted Forest`*
+  - [x] More shades of trees (to match `Route 2`)
 - [x] `Map14 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
   - [x] Add `Gemstream Mine` area
@@ -56,10 +56,10 @@ The main goal is to update the maps to match the current version of "Pokémon Re
   - [x] Rebase on `Map423 - Sheridan Village`
 - [x] `Map30 - Sheridan Village`
   - [x] Rebase on `Map423 - Sheridan Village`
-- [ ] `Map31 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
-- [ ] `Map32 - Spring of Purification`
-  - [ ] Rebase on `Map206 - Spring of Purification`
+- [x] `Map31 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
+- [x] `Map32 - Spring of Purification`
+  - [x] Rebase on `Map206 - Spring of Purification`
 - [x] `Map33 - Wedding Cutscene`
   - [x] Rebase on `Map424 - Sheridan Arena`
 </details>
@@ -177,6 +177,8 @@ General:
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
 - **Map009 - ??? (Cliffside Grave - Cutscene)**
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
+- **Map014 - Uncharted Forest**
+  - Changed some tree colors to match the new `"Map14" (Uncharted Field)`
 - **Map014 - Uncharted Field**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated move routes of event `(58|29)` for different space (UNTESTED)
@@ -191,7 +193,8 @@ General:
    - Edited events `(45|6)` & `(45|7)` for correct connection to the new `Hidden Forest` & `Sheridan Village`
 - **Map017 - Hidden Forest**
   - Updated to match `"Map423 (Sheridan Village)` from Rejuvenation
-  - Updated move routes of events `(47|38)`, `(48|38)`, `(49|38)`, `(54|38)`, `(55|38)` & `(56|38)`  for different space (UNTESTED)
+  - Updated move routes of events `(47|38)`, `(48|38)`, `(49|38)`, `(54|38)`, `(55|38)` & `(56|38)` for different space (UNTESTED)
+  - Updated event `(9|39)` for different space
 - **Map018 - Uncharted Cave (Carotos Entrance)**
   - Updated to match `"Map119" (Carotos Mountain)` from Rejuvenation
 - **Map019 - Uncharted Cave (Route 2)**
@@ -223,10 +226,16 @@ General:
   - Updated a few events to work with the environment
 - **Map029 - Sheridan Village (Stage 2)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
-  - Updated event `(35|28)` for new positions
-- **Map029 - Sheridan Village (Stage 3)**
+  - Updated event `(35|28)` for new position
+- **Map030 - Sheridan Village (Stage 3)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
-  - Updated event `(17|32)` for new positions
+  - Updated event `(17|32)` for new position
+- **Map031 - Sheridan Village (Stage 3 - 2)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Removed Trainer
+- **Map032 - Spring of Purification (Before Timeskip)**
+  - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
+  - Updated events `(18|24)`, `(19|24)` & `(20|24)` for new positions
 - **Map033 - Wedding Cutscene**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated event `(19|17)` to show the right positions
@@ -286,6 +295,8 @@ General:
   - Adds some rocks, ladders, crystals, entrances & rails for `"Gemstream Mine"`
 - **"Grand Dream City Interiors"**
   - Copied from `"Grand Dream City Interiors"` from Rejuvenation
+- **"Route 2_1"**
+  - Adds trees from `"Route 2_new"`
 - **"Route 2_new"**
   - Copied from `"Route 2"` from Rejuvenation
   - Edit foliage to be various shades of green
