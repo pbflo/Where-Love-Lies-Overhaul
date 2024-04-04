@@ -67,8 +67,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
 <details>
   <summary>Chapter 3 - Perfect Life, Perfect Paranoia</summary>
 
-- [ ] `Map36 - Sensei's House`
-  - [ ] Rebase on `Map7 - Sensei's House` (WIP)
+- [x] `Map36 - Sensei's House`
+  - [x] Rebase on `Map7 - Sensei's House`
 - [ ] `Map38 - Sheridan Village`
   - [ ] Rebase on `Map423 - Sheridan Village`
 - [ ] `Map39 - Sheridan Arena`
@@ -240,6 +240,9 @@ General:
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated event `(19|17)` to show the right positions
   - Moved event `(19|15)` to `(21|15)` to make use of the space
+- **Map036 - Sensei's House (After Timeskip)**
+  - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
+  - Updated events `(9|3)`, `(9|12)`, `(9|18)`, `(3|20)` & `(30|3)` for new positions
 - **Map041 - Sensei's Garden**
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
 - **Map056 - Route 2**
@@ -261,6 +264,8 @@ General:
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
 - **Map092 - Rose Theatre**
   - Updated to match `"Map315" (Rose Theatre)` from Rejuvenation
+- **Map094 - Uncharted Field (Ending)**
+  - Updated to match `"Map199" (Route 2)` from Rejuvenation
 - **Map113 - Uncharted Cave**
   - Added based on `Map133 (Gemstream Mine)` to have a way to the water in the new `Map014 (Uncharted Field)`
 - **Map118 - Gemstream Mine**
@@ -316,6 +321,7 @@ General:
   - Adds Cherry Blossom for Sensei's Garden
 - **"SheridanInside"**
   - Copied from different parts of `"Multi-Interiors"` from Rejuvenation
+  - Adds more furniture
 </details>
 
 <details>
