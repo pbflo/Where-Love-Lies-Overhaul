@@ -1,7 +1,7 @@
 # Where Love Lies Overhaul
 
 ## Goal
-The main goal is to update the maps to match the current version of Rejuvenation (currently V13.5) and to fix some bugs and issues.
+The main goal is to update the maps to match the current version of Rejuvenation (currently V13.5), while changing the text as little as possible, and to fix some bugs, mistakes and issues.
 
 ## ToDo's
 <details>
@@ -72,12 +72,12 @@ The main goal is to update the maps to match the current version of Rejuvenation
 
 - [x] `Map36 - Sensei's House`
   - [x] Rebase on `Map7 - Sensei's House`
-- [ ] `Map38 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
+- [x] `Map38 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
 - [x] `Map39 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map40 - Sheridan Village`
-  - [ ] Rebase on `Map425 - Sheridan Village`
+- [x] `Map40 - Sheridan Village`
+  - [x] Rebase on `Map425 - Sheridan Village`
 - [x] `Map41 - Sensei's Garden`
   - [x] Rebase on `Map426 - Sensei's Garden`
 - [ ] `Map42 - Amethyst Tunnels`
@@ -249,9 +249,16 @@ General:
 - **Map036 - Sensei's House (After Timeskip)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(9|3)`, `(9|12)`, `(9|18)`, `(3|20)` & `(30|3)` for new positions
+- **Map038 - Sheridan Village (After Timeskip)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Updated events `(44|18)`, `(47|18)` for new position
 - **Map039 - Sheridan Arena (After Timeskip)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
-  - Updated events `(20|11)` & `(20|32)` for new positions
+  - Updated events `(20|11)`, `(20|32)` & `(27|32)` for new positions
+- **Map040 - Sheridan Village (Inside - After Timeskip)**
+  - Updated to match `"Map425" (Sheridan Village)` from Rejuvenation
+  - Updated events `(8|43)`, `(38|10)` & `(12|78)` for new positions
+  - Changed dialog for inn ownership
 - **Map041 - Sensei's Garden**
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
 - **Map056 - Route 2**
@@ -329,8 +336,9 @@ General:
   - Re-Centered Taelia and Kenneth graphics
   - Adds Cherry Blossom for Sensei's Garden
 - **"SheridanInside"**
-  - Copied from different parts of `"Multi-Interiors"` from Rejuvenation
+  - Copied from different parts of `"Multi-Interiors"` from Rejuvenation & `"GearenInteriors"` from the original Where Love Lies
   - Adds more furniture
+  - Custom desk and custom furniture extensions
 </details>
 
 <details>
