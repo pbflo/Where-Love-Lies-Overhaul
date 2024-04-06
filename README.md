@@ -88,10 +88,10 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map4 - Amethyst Cave`
 - [x] `Map49 - ???`
   - [x] Rebase on `Map488 - Amethyst Grotto`
-- [ ] `Map50 - Sensei's House`
-  - [ ] Rebase on `Map7 - Sensei's House`
-- [ ] `Map51 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
+- [x] `Map50 - Sensei's House`
+  - [x] Rebase on `Map7 - Sensei's House`
+- [x] `Map51 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
 - [ ] `Map52 - FIGHT AREA`
   - [ ] Rebase on `Map7 - Sensei's House`
 - [ ] `Map53 - Sheridan Arena`
@@ -269,6 +269,12 @@ General:
   - Updated to match `"Map488" (Amethyst Grotto)` from Rejuvenation
   - Updated event `(23|30)` for new position
   - Changed dialog for required soul count
+- **Map050 - Sensei's House (Before Fire)**
+  - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
+  - Updated events `(9|12)` & `(32|5)` for new positions
+- **Map051 - Sheridan Village (On Fire)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Updated events `(40|17)` & `(50|35)` for new positions
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
@@ -351,6 +357,7 @@ General:
   - Re-Added barrier slopes (retextured)
   - Re-Centered Taelia and Kenneth graphics
   - Adds Cherry Blossom for Sensei's Garden
+  - Adds new dark window
 - **"SheridanInside"**
   - Copied from different parts of `"Multi-Interiors"` from Rejuvenation & `"GearenInteriors"` from the original Where Love Lies
   - Adds more furniture
