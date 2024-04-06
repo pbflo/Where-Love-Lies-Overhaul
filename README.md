@@ -82,8 +82,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map426 - Sensei's Garden`
 - [x] `Map42 - Amethyst Tunnels`
   - [x] Rebase on `Map184 - Amethyst Cave`
-- [ ] `Map43 - Amethyst Tunnels`
-  - [ ] Rebase Upper on `Map161 - Amethyst Cave` & Lower on `Map159 - Amethyst Cave`
+- [x] `Map43 - Amethyst Tunnels`
+  - [x] Rebase Upper on `Map161 - Amethyst Cave` & Lower on `Map159 - Amethyst Cave`
 - [ ] `Map44 - Amethyst Tunnels`
   - [ ] Rebase on `Map4 - Amethyst Cave`
 - [ ] `Map44 - Amethyst Tunnels`
@@ -263,6 +263,8 @@ General:
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
 - **Map042 - Amethyst Tunnels (Sheridan Entrance)**
   - Updated to match `"Map184" (Amethyst Cave)` from Rejuvenation
+- **Map043 - Amethyst Tunnels (Middle)**
+  - Updated to match `"Map159" (Amethyst Cave)` & `"Map161" (Amethyst Cave)` from Rejuvenation
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
