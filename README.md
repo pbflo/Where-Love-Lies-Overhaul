@@ -103,8 +103,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
 - [x] `Map56 - Route 2`
   - [x] Rebase on `Map199 - Route 2`
   - [x] Add `Gemstream Mine` area
-- [ ] `Map57 - Wispy Tower`
-  - [ ] Rebase on `Map102 - Wispy Tower` (Recolor some trees)
+- [x] `Map57 - Wispy Tower`
+  - [x] Rebase on `Map102 - Wispy Tower` (Recolor some trees)
 - [ ] `Map63 - Spring of Purification`
   - [ ] Rebase on `Map206 - Spring of Purification`
 </details>
@@ -268,6 +268,7 @@ General:
 - **Map049 - ??? (Amethyst Grotto)**
   - Updated to match `"Map488" (Amethyst Grotto)` from Rejuvenation
   - Updated event `(23|30)` for new position
+  - Changed dialog for required soul count
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
@@ -277,6 +278,8 @@ General:
 	- Remove trees at `(47|65)` & `(45|70)`
 	- Reposition event from `(78|59)` to `(38|53)`
 	- In `Map118` place traversable rail at `(10|15)`
+- **Map057 - Wispy Tower**
+  - Updated to match `"Map102" (Wispy Tower)` from Rejuvenation (recolored some trees)
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(20|18)` for new door animation

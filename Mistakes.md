@@ -53,9 +53,10 @@
 ## Map43 ##
 `"They used to be like Oh, that Brad... He's so dreamy!"` → `"like "Oh"` & `"dreamy!""`?  
 ## Map47 ##
-`"ANJU: Are there only two participants?"` → `"VIVIAN"`? 
+`"ANJU: Are there only two participants?"` → `"VIVIAN"`?  
 ## Map49 ##
 Does not match current version of Grotto (also now 6 pedestals)  
+`"The price of five human lives. Five human lives are required to..."` → `"six"`?  
 ## Map51 ##
 `"TESSIA: Guwahh!"` → `"TESSIE"`?  
 ## Map55 ##
