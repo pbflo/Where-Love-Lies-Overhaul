@@ -94,10 +94,10 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map423 - Sheridan Village`
 - [ ] `Map52 - FIGHT AREA`
   - [ ] Rebase on `Map7 - Sensei's House`
-- [ ] `Map53 - Sheridan Arena`
-  - [ ] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map54 - Sheridan Arena`
-  - [ ] Rebase on `Map424 - Sheridan Arena`
+- [x] `Map53 - Sheridan Arena`
+  - [x] Rebase on `Map424 - Sheridan Arena`
+- [x] `Map54 - Sheridan Arena`
+  - [x] Rebase on `Map424 - Sheridan Arena`
 - [x] `Map55 - Gearen City`
   - [x] Recolor Marble Mansion
 - [x] `Map56 - Route 2`
@@ -275,6 +275,12 @@ General:
 - **Map051 - Sheridan Village (On Fire)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated events `(40|17)` & `(50|35)` for new positions
+- **Map053 - Sheridan Arena (On Fire)**
+  - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
+  - Updated event `(17|10)` for new position
+- **Map054 - Sheridan Arena (Cliff)**
+  - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
+  - Updated event `(19|23)` for new position
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
