@@ -84,10 +84,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map184 - Amethyst Cave`
 - [x] `Map43 - Amethyst Tunnels`
   - [x] Rebase Upper on `Map161 - Amethyst Cave` & Lower on `Map159 - Amethyst Cave`
-- [ ] `Map44 - Amethyst Tunnels`
-  - [ ] Rebase on `Map4 - Amethyst Cave`
-- [ ] `Map44 - Amethyst Tunnels`
-  - [ ] Rebase on `Map4 - Amethyst Cave`
+- [x] `Map44 - Amethyst Tunnels`
+  - [x] Rebase on `Map4 - Amethyst Cave`
 - [ ] `Map49 - ???`
   - [ ] Rebase on `Map488 - Amethyst Grotto`
 - [ ] `Map50 - Sensei's House`
@@ -265,6 +263,8 @@ General:
   - Updated to match `"Map184" (Amethyst Cave)` from Rejuvenation
 - **Map043 - Amethyst Tunnels (Middle)**
   - Updated to match `"Map159" (Amethyst Cave)` & `"Map161" (Amethyst Cave)` from Rejuvenation
+- **Map044 - Amethyst Tunnels (Hole)**
+  - Updated to match `"Map4" (Amethyst Cave)` from Rejuvenation
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
@@ -298,6 +298,8 @@ General:
 
 - **"Amethyst Cave"**
   - Copied from `"Amethyst Cave"` from Rejuvenation
+  - Copies some tiles from the original `"Amethyst Cave"` for the Amethyst Dungeon
+  - Adds some new rock borders
 - **"Carotos Mountain"**
   - Added small hole from Rejuvenation (recolored)
   - Added deep water shadow from Rejuvenation (recolored)
