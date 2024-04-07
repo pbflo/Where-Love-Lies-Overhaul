@@ -99,8 +99,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map424 - Sheridan Arena`
 - [x] `Map54 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map55 - Gearen City`
-  - [ ] Rebase on `Map59 - East Gearen City`
+- [x] `Map55 - Gearen City`
+  - [x] Rebase on `Map59 - East Gearen City`
   - [x] Recolor Marble Mansion
 - [x] `Map56 - Route 2`
   - [x] Rebase on `Map199 - Route 2`
@@ -261,6 +261,7 @@ General:
 - **Map036 - Sensei's House (After Timeskip)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(9|3)`, `(9|12)`, `(9|18)`, `(3|20)` & `(30|3)` for new positions
+  - Fixed teleport in event `(3|20)`
 - **Map038 - Sheridan Village (After Timeskip)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated events `(44|18)`, `(47|18)` for new position
@@ -298,10 +299,14 @@ General:
 - **Map054 - Sheridan Arena (Cliff)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated event `(19|23)` for new position
+- **Map055 - Gearen City (Fire)**
+  - Updated to match `"Map59" (East Gearen City)` from Rejuvenation
+  - Fixed teleport in event `(24|33)`
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
   - Added event `(56|63)` & `(57|62)` to aknowledge the Kecleon Bazaar
+  - Fixed teleport in event `(58|28)`
   - For alternate route:
     - Place non-traversable rail at `(69|61)`
 	- Remove trees at `(47|65)` & `(45|70)`
@@ -352,6 +357,7 @@ General:
 - **"GearenCity Real"**
   - Updated `"Mysterious Mansion"` facade
   - Copied some wall, roof & fence tiles from Rejuvenation
+  - Copied tower and hedges from Rejuvenation
 - **"Goldenleaf Forest"**
   - Adds green trees
   - Adds new stairs
