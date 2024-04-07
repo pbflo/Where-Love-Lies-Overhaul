@@ -7,8 +7,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
 <details>
   <summary>Chapter 1 - My Departure</summary>
 
-- [ ] `Map2 - Gearen City`
-  - [ ] Rebase on `Map59 - East Gearen City`
+- [x] `Map2 - Gearen City`
+  - [x] Rebase on `Map59 - East Gearen City`
   - [x] Recolor Marble Mansion
 - [x] `Map4 - Mysterious Mansion`
   - [x] Rebase on `Map250 - Marble Mansion`
@@ -168,18 +168,29 @@ General:
 <details>
   <summary>Maps</summary>
 
+- **Map001 - Ferry**
+  - Changed connection to `"Map2" (Gearen City)`
 - **Map002 - Gearen City (Outside)**
-  - Changed connections to `"Mysterious Mansion"`
-  - Added NPC sprite for hidden NPC
+  - Updated to match `"Map59" (East Gearen City)` from Rejuvenation
+  - Removed hidden NPC
   - Removed hidden shop
+  - Updated events `(39|86) [Arrival]`, `(53|73) [Leaving]`, `(47|48), (47|49), (47|50) [Meeting Jenner & Chasity]`, `(46|31), (46|32), (46|33), (46|34), (46|35) [No Gig]`, `(56|30), (57|30), (58|30), (59|30) [Going to Mansion]`, `(27|39) [Thrown Out]`, `(57|19) [Fleeing From Mansion]`, `(23|14), (23|15), (23|16), (23|17), (23|18), (23|19) [Meeting Tesla]`, `(39|75) [Deagan Arrives]` for new positions
 - **Map004 - Mysterious Mansion**
   - Updated to match `"Map250" (Marble Mansion)` from Rejuvenation
+  - Changed connections to `"Map2" (Gearen City)`
 - **Map005 - Hidden Ritual**
   - Updated to match `"Map262" (Hidden Ritual)` from Rejuvenation
+- **Map006 - Gearen City (Inside)**
+  - Changed connections to `"Map2" (Gearen City)`
+- **Map007 - Gearen Apartments**
+  - Changed connection to `"Map2" (Gearen City)`
+  - Updated event `(7|21)` to lead the the right position in `"Map2" (Gearen City)`
 - **Map008 - ??? (Cliffside Grave)**
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
 - **Map009 - ??? (Cliffside Grave - Cutscene)**
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
+- **Map010 - Gearen City (Lonely Rest Center)**
+  - Changed connection to `"Map2" (Gearen City)`
 - **Map014 - Uncharted Forest**
   - Changed some tree colors to match the new `"Map14" (Uncharted Field)`
 - **Map014 - Uncharted Field**
@@ -193,11 +204,12 @@ General:
   - Updated "Transfer Player" commands
 - **Map016 - Uncharted Woods (Route 3 Upper)**
   - Updated to match `"Map067" (Route 3)` from Rejuvenation
-   - Edited events `(45|6)` & `(45|7)` for correct connection to the new `Hidden Forest` & `Sheridan Village`
+  - Edited events `(45|6)` & `(45|7)` for correct connection to the new `Hidden Forest` & `Sheridan Village`
 - **Map017 - Hidden Forest**
   - Updated to match `"Map423 (Sheridan Village)` from Rejuvenation
   - Updated move routes of events `(47|38)`, `(48|38)`, `(49|38)`, `(54|38)`, `(55|38)` & `(56|38)` for different space (UNTESTED)
   - Updated event `(9|39)` for different space
+  - Changed connections to `"Map2" (Gearen City)`
 - **Map018 - Uncharted Cave (Carotos Entrance)**
   - Updated to match `"Map119" (Carotos Mountain)` from Rejuvenation
   - Changed dialog for new spring location
@@ -339,6 +351,7 @@ General:
   - Added floor border variants from Rejuvenation
 - **"GearenCity Real"**
   - Updated `"Mysterious Mansion"` facade
+  - Copied some wall, roof & fence tiles from Rejuvenation
 - **"Goldenleaf Forest"**
   - Adds green trees
   - Adds new stairs

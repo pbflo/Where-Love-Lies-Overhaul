@@ -8,8 +8,9 @@
 `"WORKER: Woah, slow down there, kid. You're only elligible to apply for one field."` → `"eligible"`  
 `"TESLA: I-I'm sorry, was that a bit presumptious and rude of me?"` → `"presumptuous"`  
 `"TESSIA: Laaap!"` → `"TESSIE"`?  
+`"Listen, if you wanna talk more, come meet me in my office."` → Missing `"KEITH:"`  
 (36,46) → Invisible Shop  
-(74,50) → Invisible NPC  
+(74,50) → Invisible NPC (from original map)  
 ## Map3 ##
 `"Goodbye, mama."` → `"KENNETH: "`?  
 `"GRANDPA: Before you leave, Kenneth. I have a parting gift for you."` → `"GERARD"`?  
