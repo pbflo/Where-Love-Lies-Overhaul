@@ -152,7 +152,6 @@ The main goal is to update the maps to match the current version of Rejuvenation
 
 General: 
 - [ ] Fix [Mistakes](Mistakes.md)
-- [ ] Just noticed that the Sensei's House maps shrink after fire -> Expand Map52
 <br>
 
 <details>
