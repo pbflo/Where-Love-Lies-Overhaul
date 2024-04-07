@@ -114,12 +114,14 @@ The main goal is to update the maps to match the current version of Rejuvenation
 <details>
   <summary>Chapter 4 - Everyone's Bad Ending</summary>
 
+- [ ] `Map66 - Wedding Cutscene`
+  - [ ] Rebase on `Map424 - Sheridan Arena`
 - [x] `Map67 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map68 - Sensei's House`
-  - [ ] Rebase on `Map7 - Sensei's House`
-- [ ] `Map69 - Sensei's Garden`
-  - [ ] Rebase on `Map426 - Sensei's Garden`
+- [x] `Map68 - Sensei's House`
+  - [x] Rebase on `Map7 - Sensei's House`
+- [x] `Map69 - Sensei's Garden`
+  - [x] Rebase on `Map426 - Sensei's Garden`
 - [x] `Map70 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
 - [ ] `Map71 - Sheridan Village`
@@ -128,8 +130,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [ ] Rebase on `Map425 - Sheridan Village`
 - [ ] `Map73 - Help Plaza`
   - [ ] Rebase on `Map15 - Help Plaza`
-- [ ] `Map75 - Sensei's House`
-  - [ ] Rebase on `Map7 - Sensei's House`
+- [x] `Map75 - Sensei's House`
+  - [x] Rebase on `Map7 - Sensei's House`
 - [ ] `Map83 - ???`
   - [ ] Rebase on `Map34 - Xen Lounge` (Remove middle stripe)
 - [ ] `Map89 - Sheridan Village`
@@ -150,7 +152,7 @@ The main goal is to update the maps to match the current version of Rejuvenation
 
 General: 
 - [ ] Fix [Mistakes](Mistakes.md)
-- [ ] Just noticed that the Sensei's House maps shrink after fire -> Expand Map36, Map50 & Map52
+- [ ] Just noticed that the Sensei's House maps shrink after fire -> Expand Map52
 <br>
 
 <details>
@@ -317,13 +319,21 @@ General:
   - Updated to match `"Map102" (Wispy Tower)` from Rejuvenation (recolored some trees)
 - **Map063 - Spring of Purification (Timeskip & Present)**
   - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
-  - Updated events `(19|25)` for new positions
+  - Updated event `(19|25)` for new position
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(20|18)` for new door animation
+- **Map068 - Sensei's House (Present - Main Room)**
+  - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
+  - Updated events `(11|18)`, `(11|11)` for new positions
+- **Map069 - Sensei's Garden**
+  - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
+  - Fixed teleport in event `(13|10)`
 - **Map070 - Sheridan Arena (Present Day)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(19|11)` to make more sense with single door
+- **Map075 - Sensei's House (Present - Sideroom)**
+  - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
 - **Map091 - Sheridan Arena (True Ending)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
 - **Map092 - Rose Theatre**
