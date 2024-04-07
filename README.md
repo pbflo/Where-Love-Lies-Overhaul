@@ -107,8 +107,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Add `Gemstream Mine` area
 - [x] `Map57 - Wispy Tower`
   - [x] Rebase on `Map102 - Wispy Tower` (Recolor some trees)
-- [ ] `Map63 - Spring of Purification`
-  - [ ] Rebase on `Map206 - Spring of Purification`
+- [x] `Map63 - Spring of Purification`
+  - [x] Rebase on `Map206 - Spring of Purification`
 </details>
 
 <details>
@@ -150,6 +150,7 @@ The main goal is to update the maps to match the current version of Rejuvenation
 
 General: 
 - [ ] Fix [Mistakes](Mistakes.md)
+- [ ] Just noticed that the Sensei's House maps shrink after fire -> Expand Map36, Map50 & Map52
 <br>
 
 <details>
@@ -261,7 +262,7 @@ General:
 - **Map036 - Sensei's House (After Timeskip)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(9|3)`, `(9|12)`, `(9|18)`, `(3|20)` & `(30|3)` for new positions
-  - Fixed teleport in event `(3|20)`
+  - Fixed teleport in event `(3|20)` & `(9|12)`
 - **Map038 - Sheridan Village (After Timeskip)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated events `(44|18)`, `(47|18)` for new position
@@ -314,6 +315,9 @@ General:
 	- In `Map118` place traversable rail at `(10|15)`
 - **Map057 - Wispy Tower**
   - Updated to match `"Map102" (Wispy Tower)` from Rejuvenation (recolored some trees)
+- **Map063 - Spring of Purification (Timeskip & Present)**
+  - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
+  - Updated events `(19|25)` for new positions
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(20|18)` for new door animation
