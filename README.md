@@ -114,8 +114,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
 <details>
   <summary>Chapter 4 - Everyone's Bad Ending</summary>
 
-- [ ] `Map66 - Wedding Cutscene`
-  - [ ] Rebase on `Map424 - Sheridan Arena`
+- [x] `Map66 - Wedding Cutscene`
+  - [x] Rebase on `Map424 - Sheridan Arena`
 - [x] `Map67 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
 - [x] `Map68 - Sensei's House`
@@ -319,6 +319,9 @@ General:
 - **Map063 - Spring of Purification (Timeskip & Present)**
   - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
   - Updated event `(19|25)` for new position
+- **Map66 - Wedding Cutscene (Rebuilding)**
+  - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation  
+  - Updated event `(20|9)` for new position
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(20|18)` for new door animation
