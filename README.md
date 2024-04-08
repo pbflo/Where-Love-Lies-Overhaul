@@ -128,8 +128,8 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [ ] Rebase on `Map423 - Sheridan Village`
 - [ ] `Map72 - Sheridan Village`
   - [ ] Rebase on `Map425 - Sheridan Village`
-- [ ] `Map73 - Help Plaza`
-  - [ ] Rebase on `Map15 - Help Plaza`
+- [x] `Map73 - Help Plaza`
+  - [x] Rebase on `Map15 - Help Plaza`
 - [x] `Map75 - Sensei's House`
   - [x] Rebase on `Map7 - Sensei's House`
 - [ ] `Map83 - ???`
@@ -145,13 +145,16 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] *V13.5* Retexture
 - [ ] `Map93 - My Memory`
   - [ ] Rebase on `Map7 - Sensei's House`
-- [ ] `Map94 - Uncharted Field`
-  - [ ] Rebase on `Map199 - Route 2`
+- [x] `Map94 - Uncharted Field`
+  - [x] Rebase on `Map199 - Route 2`
 </details>
 <br>
 
 General: 
 - [ ] Fix [Mistakes](Mistakes.md)
+- [x] Small Rejuvenation Mod
+  - [x] Replacing the WLL images (*`Flashback_WLL2.png`*, *`flashback_WLL3.png`*, `flashback_WLL4.png`, `flashback_WWL1.png`, *`V13Flashback_10.png`*)
+  - [x] Reintroducing the gift (first via WLL Detection (see `NewGamePlus.rb`) and if that fails via the password) \[-> original reward: V10 `"Map294" (Central Building)` at `(25|14)`\]
 <br>
 
 <details>
@@ -334,12 +337,16 @@ General:
 - **Map070 - Sheridan Arena (Present Day)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(19|11)` to make more sense with single door
+- **Map073 - Help Plaza**
+  - Updated to match `"Map15" (Help Plaza)` from Rejuvenation
+  - Updated event `(9|10)` for new position
 - **Map075 - Sensei's House (Present - Sideroom)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
 - **Map091 - Sheridan Arena (True Ending)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
 - **Map092 - Rose Theatre**
   - Updated to match `"Map315" (Rose Theatre)` from Rejuvenation
+  - Replaced ending images
 - **Map094 - Uncharted Field (Ending)**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
 - **Map113 - Uncharted Cave**
@@ -404,6 +411,7 @@ General:
   - Re-Centered Taelia and Kenneth graphics
   - Adds Cherry Blossom for Sensei's Garden
   - Adds new dark window
+  - Adds new burned stone barrier
 - **"SheridanInside"**
   - Copied from different parts of `"Multi-Interiors"` from Rejuvenation & `"GearenInteriors"` from the original Where Love Lies
   - Adds more furniture
