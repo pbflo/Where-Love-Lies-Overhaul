@@ -124,10 +124,10 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map426 - Sensei's Garden`
 - [x] `Map70 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
-- [ ] `Map71 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
-- [ ] `Map72 - Sheridan Village`
-  - [ ] Rebase on `Map425 - Sheridan Village`
+- [x] `Map71 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
+- [x] `Map72 - Sheridan Village`
+  - [x] Rebase on `Map425 - Sheridan Village`
 - [x] `Map73 - Help Plaza`
   - [x] Rebase on `Map15 - Help Plaza`
 - [x] `Map75 - Sensei's House`
@@ -337,6 +337,15 @@ General:
 - **Map070 - Sheridan Arena (Present Day)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(19|11)` to make more sense with single door
+- **Map071 - Sheridan Village (Present)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Updated events `(34|27), (35|27), (36|27)`, `(40|18)`, `(56|42)`, `(48|32)` for new positions
+  - Changed dialog for opening gate
+  - Changed dialog for Eldest's Location
+- **Map072 - Sheridan Village (Inside - Present)**
+  - Updated to match `"Map425" (Sheridan Village)` from Rejuvenation
+  - Updated events `(12|78)`, `(7|76)`, `(17|73)` for new positions
+  - Fixed starting over sprite for `(59|29)`
 - **Map073 - Help Plaza**
   - Updated to match `"Map15" (Help Plaza)` from Rejuvenation
   - Updated event `(9|10)` for new position
