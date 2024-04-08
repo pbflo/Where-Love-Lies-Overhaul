@@ -132,19 +132,19 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] Rebase on `Map15 - Help Plaza`
 - [x] `Map75 - Sensei's House`
   - [x] Rebase on `Map7 - Sensei's House`
-- [ ] `Map83 - ???`
-  - [ ] Rebase on `Map34 - Xen Lounge` (Remove middle stripe)
-- [ ] `Map89 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
-- [ ] `Map90 - Sheridan Village`
-  - [ ] Rebase on `Map423 - Sheridan Village`
+- [x] `Map83 - ???`
+  - [x] Rebase on `Map34 - Xen Lounge` (Remove middle stripe)
+- [x] `Map89 - Sheridan Village`
+  - [x] Rebase on `Map423 - Sheridan Village`
+- [x] `Map90 - Sheridan Village`
+  - [x] Copy from `Map423 - Sheridan Village`
 - [x] `Map91 - Sheridan Arena`
   - [x] Rebase on `Map424 - Sheridan Arena`
 - [x] `Map92 - Rose Theatre`
   - [x] Rebase on `Map315 - Rose Theatre`
   - [x] *V13.5* Retexture
-- [ ] `Map93 - My Memory`
-  - [ ] Rebase on `Map7 - Sensei's House`
+- [x] `Map93 - My Memory`
+  - [x] Rebase on `Map7 - Sensei's House`
 - [x] `Map94 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
 </details>
@@ -328,6 +328,7 @@ General:
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(20|18)` for new door animation
+  - Fixed teleport in event `(20|18)`
 - **Map068 - Sensei's House (Present - Main Room)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(11|18)`, `(11|11)` for new positions
@@ -351,11 +352,23 @@ General:
   - Updated event `(9|10)` for new position
 - **Map075 - Sensei's House (Present - Sideroom)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
+- **Map083 - ??? (Madelis' Room)**
+  - Updated to match `"Map34" (Xen Lounge)` from Rejuvenation
+  - Fixed teleport in event `(12|8)`
+- **Map089 - Sheridan Village (Present - False End)**
+  - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
+  - Updated event `(45|32)` for new position
+- **Map090 - Sheridan Village (Present - Current Version)**
+  - Copied from `"Map423" (Sheridan Village)` from Rejuvenation
 - **Map091 - Sheridan Arena (True Ending)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
 - **Map092 - Rose Theatre**
   - Updated to match `"Map315" (Rose Theatre)` from Rejuvenation
   - Replaced ending images
+  - Fixed teleport in event `(7|7)`
+- **Map093 - My Memory**
+  - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
+  - Updated event `(8|10)` for new position
 - **Map094 - Uncharted Field (Ending)**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
 - **Map113 - Uncharted Cave**
