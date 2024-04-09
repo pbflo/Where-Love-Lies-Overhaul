@@ -151,7 +151,7 @@ The main goal is to update the maps to match the current version of Rejuvenation
 <br>
 
 General: 
-- [ ] Fix [Mistakes](Mistakes.md)
+- [x] Fix [Mistakes](Mistakes.md)
 - [x] Small Rejuvenation Mod
   - [x] Replacing the WLL images (*`Flashback_WLL2.png`*, *`flashback_WLL3.png`*, `flashback_WLL4.png`, `flashback_WWL1.png`, *`V13Flashback_10.png`*)
   - [x] Reintroducing the gift (first via WLL Detection (see `NewGamePlus.rb`) and if that fails via the password) \[-> original reward: V10 `"Map294" (Central Building)` at `(25|14)`\]
@@ -180,33 +180,42 @@ General:
   - Removed hidden NPC
   - Removed hidden shop
   - Updated events `(39|86) [Arrival]`, `(53|73) [Leaving]`, `(47|48), (47|49), (47|50) [Meeting Jenner & Chasity]`, `(46|31), (46|32), (46|33), (46|34), (46|35) [No Gig]`, `(56|30), (57|30), (58|30), (59|30) [Going to Mansion]`, `(27|39) [Thrown Out]`, `(57|19) [Fleeing From Mansion]`, `(23|14), (23|15), (23|16), (23|17), (23|18), (23|19) [Meeting Tesla]`, `(39|75) [Deagan Arrives]` for new positions
+  - Fixed some spelling mistakes
+- **Map003 - Four Island (Departure)**
+  - Fixed some spelling mistakes
 - **Map004 - Mysterious Mansion**
   - Updated to match `"Map250" (Marble Mansion)` from Rejuvenation
   - Changed connections to `"Map2" (Gearen City)`
 - **Map005 - Hidden Ritual**
   - Updated to match `"Map262" (Hidden Ritual)` from Rejuvenation
+  - Removes unused touch event
 - **Map006 - Gearen City (Inside)**
   - Changed connections to `"Map2" (Gearen City)`
 - **Map007 - Gearen Apartments**
   - Changed connection to `"Map2" (Gearen City)`
-  - Updated event `(7|21)` to lead the the right position in `"Map2" (Gearen City)`
+  - Updated event `(7|21)` to lead the the right position in `"Map2" (Gearen City)`  
+  - Fixed some spelling mistakes
 - **Map008 - ??? (Cliffside Grave)**
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
 - **Map009 - ??? (Cliffside Grave - Cutscene)**
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
+  - Fixed two repeated lines that did not match their counterpart in `"Map008" (???)`
 - **Map010 - Gearen City (Lonely Rest Center)**
   - Changed connection to `"Map2" (Gearen City)`
-- **Map014 - Uncharted Forest**
+- **Map012 - Uncharted Forest**
   - Changed some tree colors to match the new `"Map14" (Uncharted Field)`
+  - Fixed some spelling mistakes
 - **Map014 - Uncharted Field**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated move routes of event `(58|29)` for different space (UNTESTED)
   - Adds some pink trees & grass around the big one
   - Replaced tree with younger version
   - Adds transition events `(57|7)` & `(58|7)` to `"Map015" (Destroyed Village)`
+  - Fixed some spelling mistakes
 - **Map015 - Destroyed Village**
   - Updated to match `"Map432" (River's End)` from Rejuvenation
   - Updated "Transfer Player" commands
+  - Fixed some spelling mistakes
 - **Map016 - Uncharted Woods (Route 3 Upper)**
   - Updated to match `"Map067" (Route 3)` from Rejuvenation
   - Edited events `(45|6)` & `(45|7)` for correct connection to the new `Hidden Forest` & `Sheridan Village`
@@ -235,6 +244,8 @@ General:
   - Added event `(21|15)` for wider walkway
   - Edited event `(19|15)` & `(20|15)` move routes for wider walkway
   - Edited event `(19|15)`, `(20|15)` & `(21|15)` so Taelia does not get stuck when seeking cover
+- **Map025 - Thief's Stronghold (Inside)**
+  - Fixed some spelling mistakes
 - **Map026 - Sheridan Village (Stage 1)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Changed dialog for new spring entrance
@@ -246,6 +257,7 @@ General:
 - **Map028 - Forest Cliff (Hole)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated a few events to work with the environment
+  - Removed Capsule Key
 - **Map029 - Sheridan Village (Stage 2)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated event `(35|28)` for new position
@@ -255,7 +267,9 @@ General:
 - **Map031 - Sheridan Village (Stage 3 - 2)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Removed Trainer
+  - Removed unused event
   - Fixed teleports in events `(29|6)`, `(30|6)`, `(40|6)` & `(41|6)` to lead to the forest cliff with the destroyed rock
+  - Fixed a spelling mistake
 - **Map032 - Spring of Purification (Before Timeskip)**
   - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
   - Updated events `(18|24)`, `(19|24)` & `(20|24)` for new positions
@@ -270,19 +284,23 @@ General:
 - **Map038 - Sheridan Village (After Timeskip)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated events `(44|18)`, `(47|18)` for new position
+  - New after battle dialog for `(25|36)`
 - **Map039 - Sheridan Arena (After Timeskip)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Updated events `(20|11)`, `(20|32)` & `(27|32)` for new positions
+  - Fixed some spelling mistakes
 - **Map040 - Sheridan Village (Inside - After Timeskip)**
   - Updated to match `"Map425" (Sheridan Village)` from Rejuvenation
   - Updated events `(8|43)`, `(38|10)` & `(12|78)` for new positions
   - Changed dialog for inn ownership
+  - Fixed some spelling mistakes
 - **Map041 - Sensei's Garden**
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
 - **Map042 - Amethyst Tunnels (Sheridan Entrance)**
   - Updated to match `"Map184" (Amethyst Cave)` from Rejuvenation
 - **Map043 - Amethyst Tunnels (Middle)**
   - Updated to match `"Map159" (Amethyst Cave)` & `"Map161" (Amethyst Cave)` from Rejuvenation
+  - Fixed a spelling mistake
 - **Map044 - Amethyst Tunnels (Hole)**
   - Updated to match `"Map4" (Amethyst Cave)` from Rejuvenation
 - **Map049 - ??? (Amethyst Grotto)**
@@ -295,6 +313,7 @@ General:
 - **Map051 - Sheridan Village (On Fire)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated events `(40|17)` & `(50|35)` for new positions
+  - Fixed a spelling mistake
 - **Map052 - FIGHT AREA**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(5|10)`, `(5|4)`, `(30|8)`, `(10|37)` for new positions (UNTESTED)
@@ -307,6 +326,7 @@ General:
 - **Map055 - Gearen City (Fire)**
   - Updated to match `"Map59" (East Gearen City)` from Rejuvenation
   - Fixed teleport in event `(24|33)`
+  - Fixed a spelling mistake
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
@@ -319,9 +339,13 @@ General:
 	- In `Map118` place traversable rail at `(10|15)`
 - **Map057 - Wispy Tower**
   - Updated to match `"Map102" (Wispy Tower)` from Rejuvenation (recolored some trees)
+- **Map060 - Icefall Cave**
+  - Fixed a spelling mistake
 - **Map063 - Spring of Purification (Timeskip & Present)**
   - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
   - Updated event `(19|25)` for new position
+- **Map064 - Carotos Pinnacle (Apparations)**
+  - Fixed a spelling mistake
 - **Map66 - Wedding Cutscene (Rebuilding)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation  
   - Updated event `(20|9)` for new position
@@ -329,33 +353,46 @@ General:
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(20|18)` for new door animation
   - Fixed teleport in event `(20|18)`
+  - Changed dialog for Eldest's location
+  - Fixed a spelling mistake
 - **Map068 - Sensei's House (Present - Main Room)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(11|18)`, `(11|11)` for new positions
 - **Map069 - Sensei's Garden**
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
   - Fixed teleport in event `(13|10)`
+  - Fixed a spelling mistake
 - **Map070 - Sheridan Arena (Present Day)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Edited event `(19|11)` to make more sense with single door
 - **Map071 - Sheridan Village (Present)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
-  - Updated events `(34|27), (35|27), (36|27)`, `(40|18)`, `(56|42)`, `(48|32)` for new positions
+  - Updated events `(34|27), (35|27), (36|27)`, `(40|18)`, `(56|42)`, `(48|32)`, `(48|31)` for new positions
   - Changed dialog for opening gate
-  - Changed dialog for Eldest's Location
+  - Changed dialog for Eldest's location
+  - Changed trainer dialog for `(27|17)`
 - **Map072 - Sheridan Village (Inside - Present)**
   - Updated to match `"Map425" (Sheridan Village)` from Rejuvenation
-  - Updated events `(12|78)`, `(7|76)`, `(17|73)` for new positions
+  - Updated events `(12|78)`, `(7|76)`, `(17|73)`, `(56|7)`, `(17|34)` for new positions
   - Fixed starting over sprite for `(59|29)`
+  - Fixed some spelling mistakes
 - **Map073 - Help Plaza**
   - Updated to match `"Map15" (Help Plaza)` from Rejuvenation
   - Updated event `(9|10)` for new position
+- **Map074 - Inner Workings (Broken Connection)**
+  - Fixed a spelling mistake
 - **Map075 - Sensei's House (Present - Sideroom)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
 - **Map083 - ??? (Madelis' Room)**
   - Updated to match `"Map34" (Xen Lounge)` from Rejuvenation
   - Fixed teleport in event `(12|8)`
-- **Map089 - Sheridan Village (Present - False End)**
+- **Map084 - Inner Workings (Fixed Connection)**
+  - Fixed a spelling mistake
+- **Map087 - Inner Workings (Fixed Connection)**
+  - Fixed a spelling mistake
+- **Map088 - Carotos Pinnacle (True Ending)**
+  - Fixed some spelling mistakes
+- **Map089 - Sheridan Village (Present - End Cutscene)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated event `(45|32)` for new position
 - **Map090 - Sheridan Village (Present - Current Version)**
@@ -366,6 +403,7 @@ General:
   - Updated to match `"Map315" (Rose Theatre)` from Rejuvenation
   - Replaced ending images
   - Fixed teleport in event `(7|7)`
+  - Fixed a spelling mistake
 - **Map093 - My Memory**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated event `(8|10)` for new position

@@ -8,11 +8,11 @@
 `"WORKER: Woah, slow down there, kid. You're only elligible to apply for one field."` → `"eligible"`  
 `"TESLA: I-I'm sorry, was that a bit presumptious and rude of me?"` → `"presumptuous"`  
 `"TESSIA: Laaap!"` → `"TESSIE"`?  
-`"Listen, if you wanna talk more, come meet me in my office."` → Missing `"KEITH:"`  
+`"Listen, if you wanna talk more, come meet me in my office."` → Missing `"KEITH: "`  
 (36,46) → Invisible Shop  
 (74,50) → Invisible NPC (from original map)  
 ## Map3 ##
-`"Goodbye, mama."` → `"KENNETH: "`?  
+`"Goodbye, mama."` → Missing `"KENNETH: "`  
 `"GRANDPA: Before you leave, Kenneth. I have a parting gift for you."` → `"GERARD"`?  
 ## Map5 ##
 (38,10) → Unused Player Touch Event?  
@@ -26,10 +26,10 @@
 `"KENNETH: What? You saw here come by this way?"` → `"her"`  
 ## Map14 ##
 `"Ruffian"` Numbers  
-`"TAELIA: And what? Now I owe you something?"` → revealed name too early  
+`"TAELIA: And what? Now I owe you something?"` & `"TAELIA: If you don't leave right now...\| I'll...\| I'll...... \| I'll......"` → revealed name too early  
 ## Map15 ##
 `"CELLA: He needs to leave RIGHT now."` → revealed name too early  
-`"CELLA: Please look after Cella for me, Kenneth."` → `"after Taelia for"`?  
+`"CELLA: Please look after Cella for me, Kenneth."` → `"after Taelia for"`  
 ## Map25 ##
 `"And what an exchange it was! We got a beatiful looking necklace too!"` → `"beautiful"`  
 `"Everytime we try to do something around these parts, he'll just knock us down!"` → `"Every time"`  
@@ -44,7 +44,7 @@
 (42,43) → Transfers Player to not existing map 206  
 (52,53) → Second event page name changes  
 ## Map39 ##
-`"It's getting late, we should go pick Nora up from school, yes?"` → `"CELLA: "`?  
+`"It's getting late, we should go pick Nora up from school, yes?"` → `"CELLA: "`  
 `"Both of you ran away because you couldn't be assed to keep up with your family."` → `"asked"`  
 `"Imagine my surprise when I find out that my little brother's been fired and he hasn't been in that city for weeks?"` → `"weeks"` does not make sense when he arrives one week after Kenneth  
 `"Anwyay, I've located Taelia's aura."` → `"Anyway"`  
@@ -53,13 +53,11 @@
 `"TAELIA: I know, I'm sorry, Buttercup. I'll make it up to you somehow"` → no sentence end  
 ## Map43 ##
 `"They used to be like Oh, that Brad... He's so dreamy!"` → `"like "Oh"` & `"dreamy!""`?  
-## Map47 ##
-`"ANJU: Are there only two participants?"` → `"VIVIAN"`?  
 ## Map49 ##
 Does not match current version of Grotto (also now 6 pedestals)  
 `"The price of five human lives. Five human lives are required to..."` → `"six"`?  
 ## Map51 ##
-`"TESSIA: Guwahh!"` → `"TESSIE"`?  
+`"TESSIA: Guwahh!"` → `"TESSIE"`  
 ## Map55 ##
 `"Unfortunately, it looks like the head of Gearen City wasn't too happy about that, so he evicted Amber Von Brant anyway."` → `"Brandt"`  
 (16,29) → Unused Door  
@@ -92,8 +90,7 @@ Does not match current version of Grotto (also now 6 pedestals)
 ## Map84 ##
 `"KAI'YA: Nevertheless, I believe fixing your relationship with Deagan seems to have stablized your mind."` → `"stabilized"`  
 ## Map87 ##
-`"Ever get that feeling of Deja Vu?"` → `"Déjà-vu"`  
-`"???: Oh, no, I think you misunderstand. The killer and I have no affiliation."` → `"misunderstood"`  
+`"Ever get that feeling of Deja Vu?"` → `"déjà vu"`  
 ## Map88 ##
 `"KETA: I sent it somewhere he'll be locked away."` → either `"it"` or `"he"`?  
 `"KENNETH: There's a Pokeball all the wy up here?"` → `"way"`  
