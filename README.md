@@ -181,6 +181,8 @@ General:
   - Removed hidden shop
   - Updated events `(39|86) [Arrival]`, `(53|73) [Leaving]`, `(47|48), (47|49), (47|50) [Meeting Jenner & Chasity]`, `(46|31), (46|32), (46|33), (46|34), (46|35) [No Gig]`, `(56|30), (57|30), (58|30), (59|30) [Going to Mansion]`, `(27|39) [Thrown Out]`, `(57|19) [Fleeing From Mansion]`, `(23|14), (23|15), (23|16), (23|17), (23|18), (23|19) [Meeting Tesla]`, `(39|75) [Deagan Arrives]` for new positions
   - Fixed some spelling mistakes
+  - Changed dialog concerning Worker ID location
+  - Workers & Pokémon now disappear at night
 - **Map003 - Four Island (Departure)**
   - Fixed some spelling mistakes
 - **Map004 - Mysterious Mansion**
@@ -189,14 +191,17 @@ General:
 - **Map005 - Hidden Ritual**
   - Updated to match `"Map262" (Hidden Ritual)` from Rejuvenation
   - Removes unused touch event
+  - Time Capsule can now be found with Item Finder
 - **Map006 - Gearen City (Inside)**
   - Changed connections to `"Map2" (Gearen City)`
 - **Map007 - Gearen Apartments**
-  - Changed connection to `"Map2" (Gearen City)`
-  - Updated event `(7|21)` to lead the the right position in `"Map2" (Gearen City)`  
+  - Changed connections to `"Map2" (Gearen City)`
   - Fixed some spelling mistakes
+  - Fixed a way to get out of bounds
+  - Moved a room to no longer be visible from another
 - **Map008 - ??? (Cliffside Grave)**
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
+  - Adds dialog for not going into the cave
 - **Map009 - ??? (Cliffside Grave - Cutscene)**
   - Updated to match `"Map200" (Cliffside Grave)` from Rejuvenation
   - Fixed two repeated lines that did not match their counterpart in `"Map008" (???)`
@@ -383,6 +388,8 @@ General:
   - Fixed a spelling mistake
 - **Map075 - Sensei's House (Present - Sideroom)**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
+- **Map076 - Pokemon Center (Four Island)**
+  - Fixed an invalid variable
 - **Map083 - ??? (Madelis' Room)**
   - Updated to match `"Map34" (Xen Lounge)` from Rejuvenation
   - Fixed teleport in event `(12|8)`
@@ -433,6 +440,7 @@ General:
 - **"Chrisola Hotel"**
   - Copied from `"Chrisola Hotel"` from Rejuvenation and added the differences from WLL
   - Added cracked/broken variant for new floors
+  - Added destroyed carpet
 - **"CorruptedCave"**
   - Added new sacrifice symbol
   - Updated pit with new border
@@ -484,4 +492,11 @@ General:
 
 - **"TheEnd_1", "TheEnd_2" & "TheEnd_3"**
   - New images based on new `Route 2` environment
+</details>
+
+<details>
+  <summary>Panoramas</summary>
+
+- **"hiddenforestbg"**
+  - New images based on new `Hidden Forest` environment for `"Cliffside Grave"` backdrop
 </details>
