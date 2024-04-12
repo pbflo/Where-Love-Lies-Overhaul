@@ -26,18 +26,23 @@ The main goal is to update the maps to match the current version of Rejuvenation
 
 - [x] *`Map12 - Uncharted Forest`*
   - [x] More shades of trees (to match `Route 2`)
-- [x] `Map14 - Uncharted Field`
+- [ ] `Map14 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
   - [x] Add `Gemstream Mine` area
+  - [ ] Fix stop under waterfall
 - [x] `Map15 - Destroyed Village`
   - [x] *V13.5* Rebase on `Map432 - River's End`
+  - [ ] Fix stop under bridge from above
 - [x] `Map16 - Uncharted Woods`
   - [x] Rebase on `Map67 - Route 3`
 - [x] `Map17 - Hidden Forest`
   - [x] Rebase on `Map423 - Sheridan Village`
   - [x] Change dialog for building design
-- [x] `Map18 - Uncharted Cave`
+- [ ] `Map18 - Uncharted Cave`
   - [x] *V13.5* Rebase (again) on `Map119 - Carotos Mountain`
+  - [ ] Fix glitchy following pokemon behavior on borders
+- [x] `Map20 - Cella's House`
+  - [x] Rebase on `Map425 - Sheridan Village`
 - [x] `Map21 - Uncharted Woods`
   - [x] Rebase on `Map71 - Route 3`
 - [x] `Map22 - Uncharted Woods`
@@ -155,6 +160,7 @@ General:
 - [x] Small Rejuvenation Mod
   - [x] Replacing the WLL images (*`Flashback_WLL2.png`*, *`flashback_WLL3.png`*, `flashback_WLL4.png`, `flashback_WWL1.png`, *`V13Flashback_10.png`*)
   - [x] Reintroducing the gift (first via WLL Detection (see `NewGamePlus.rb`) and if that fails via the password) \[-> original reward: V10 `"Map294" (Central Building)` at `(25|14)`\]
+- [ ] Look for changed music
 <br>
 
 <details>
@@ -207,9 +213,11 @@ General:
   - Fixed two repeated lines that did not match their counterpart in `"Map008" (???)`
 - **Map010 - Gearen City (Lonely Rest Center)**
   - Changed connection to `"Map2" (Gearen City)`
-- **Map012 - Uncharted Forest**
+- **Map012 - Uncharted Forest (Main)**
   - Changed some tree colors to match the new `"Map14" (Uncharted Field)`
   - Fixed some spelling mistakes
+- **Map013 - Uncharted Forest (Pond)**
+  - Changed connection to `"Map31" (Sheridan Village)`
 - **Map014 - Uncharted Field**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
   - Updated move routes of event `(58|29)` for different space (UNTESTED)
@@ -217,16 +225,20 @@ General:
   - Replaced tree with younger version
   - Adds transition events `(57|7)` & `(58|7)` to `"Map015" (Destroyed Village)`
   - Fixed some spelling mistakes
+  - Going under waterfalls supports following pokémon
+  - Split event `1` & the triggers `18, 27, 5, 29, 30` because of position
 - **Map015 - Destroyed Village**
   - Updated to match `"Map432" (River's End)` from Rejuvenation
   - Updated "Transfer Player" commands
   - Fixed some spelling mistakes
+  - Going under & over the rock bridge supports following pokémon
+  - Updated event `(41|21)` for new position
 - **Map016 - Uncharted Woods (Route 3 Upper)**
   - Updated to match `"Map067" (Route 3)` from Rejuvenation
   - Edited events `(45|6)` & `(45|7)` for correct connection to the new `Hidden Forest` & `Sheridan Village`
 - **Map017 - Hidden Forest**
   - Updated to match `"Map423 (Sheridan Village)` from Rejuvenation
-  - Updated move routes of events `(47|38)`, `(48|38)`, `(49|38)`, `(54|38)`, `(55|38)` & `(56|38)` for different space (UNTESTED)
+  - Updated move routes of events `(47|38), (48|38), (49|38)`, `(54|38), (55|38), (56|38)` & `(45|7)` for different space
   - Updated event `(9|39)` for different space
   - Changed connections to `"Map2" (Gearen City)`
 - **Map018 - Uncharted Cave (Carotos Entrance)**
@@ -235,15 +247,20 @@ General:
 - **Map019 - Uncharted Cave (Route 2)**
   - Changed "Transfer Player" of event `(55|10)` to match the new `"Map015" (Destroyed Village)`
 - **Map020 - Cella's House**
+  - Updated to match `"Map425 (Sheridan Village)` from Rejuvenation
   - Changed "Transfer Player" of event `(7|16)` & `(27|16)` to match the new `"Map015" (Destroyed Village)`
+  - Updated event `(7|17)` for different space
 - **Map021 - Uncharted Woods (Route 3 Lower)**
   - Updated to match `"Map071" (Route 3)` from Rejuvenation
   - Edited events `(9|30)` & `(9|31)` for correct connection to the new `Thief's Stronghold`
-  - Adds events `(23|33)`, `(24|33)` & `(25|33)` for connection to the new `Destroyed Village` (UNTESTED IN BOTH DIRECTIONS)
+  - Adds events `(23|33)`, `(24|33)` & `(25|33)` for connection to the new `Destroyed Village`
+  - New dialog for trying to go to `Thief's Stronghold` without checking on Taelia
 - **Map022 - Uncharted Woods (Route 3 Middle)**
   - Updated to match `"Map069" (Route 3)` from Rejuvenation
 - **Map023 - Thief's Stronghold (Outside)**
   - Updated to match `"Map82" (Goldenleaf Town)` from Rejuvenation
+  - Stairs now support following pokémon
+  - Trainers will reset after turning back time
 - **Map024 - Forest Cliff (Boulder)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
   - Added event `(21|15)` for wider walkway
@@ -251,6 +268,9 @@ General:
   - Edited event `(19|15)`, `(20|15)` & `(21|15)` so Taelia does not get stuck when seeking cover
 - **Map025 - Thief's Stronghold (Inside)**
   - Fixed some spelling mistakes
+  - Edited event `(14|39)` for correct connection to the new `Thief's Stronghold` (Outside)
+  - Edited event `(14|39)` for correct connection to the new `Thief's Stronghold` (Outside)
+  - When "turning back time" player will be positioned at entered entrance
 - **Map026 - Sheridan Village (Stage 1)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Changed dialog for new spring entrance
@@ -467,6 +487,7 @@ General:
   - Adds back pink trees & grass for transformation
   - Created a younger tree design for `"Uncharted Field"`
   - Copied destroyed house & family from original `"Route 2"`
+  - Adds another water tile
 - **"Route 3"**
   - Copied from `"Route 3"` from Rejuvenation
   - Added cutout version of default grass
@@ -492,6 +513,8 @@ General:
 
 - **"TheEnd_1", "TheEnd_2" & "TheEnd_3"**
   - New images based on new `Route 2` environment
+- **"CarvedTree"**
+  - Slighly edited zoomed in copy of the [chapter 2 intro image](https://imgur.com/imtK2xM) by Zumi
 </details>
 
 <details>
