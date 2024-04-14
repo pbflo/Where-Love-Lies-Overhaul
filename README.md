@@ -493,6 +493,8 @@ All are just copies from the corresponding ones from Rejuvenation
   - Edited copy of `Venam's Mom` from Rejuvenation
 - **"MC_Jan"**
   - Copy of `trchar220` from Rejuvenation
+- **"Boy_run_1", "Boy_run_2", "boy_surf_1", "boy_surf_2", "Boy_walk_1", "Boy_walk_2", "MC_Kenneth6" & "MC_Kenneth7"**
+  - Edited copy of `Keta` from Rejuvenation
 - **"MC_Jan"**
   - Copy of `trchar220` from Rejuvenation
 - **"MC_Madelis"**
@@ -531,10 +533,18 @@ All are just copies from the corresponding ones from Rejuvenation
 <details>
   <summary>Pictures</summary>
 
-- **"TheEnd_1", "TheEnd_2" & "TheEnd_3"**
-  - New images based on new `Route 2` environment
+- **"TheEnd_1_Overhaul" & "TheEnd_2_Overhaul"**
+  - New images based on new `"Map14" (Uncharted Field)` environment
+- **"TheEnd_3_Overhaul"**
+  - New images based on new `"Map14" (Uncharted Field)` environment
+  - Fixed alignment of text
 - **"CarvedTree"**
   - Slighly edited zoomed in copy of the [chapter 2 intro image](https://imgur.com/imtK2xM) by Zumi
+- **"Chapter4_3" & "Chapter4_6"**
+  - Updated Kenneth graphic
+  - Fixed Alignment
+- **"Chapter3_4" & "Chapter3_7"**
+  - Updated Kenneth graphic
 </details>
 
 <details>
@@ -582,6 +592,7 @@ All are just copies from the corresponding ones from Rejuvenation
   - Created a younger tree design for `"Uncharted Field"`
   - Copied destroyed house & family from original `"Route 2"`
   - Adds another water tile
+  - Updated Kenneth graphic
 - **"Route 3"**
   - Copied from `"Route 3"` from Rejuvenation
   - Added cutout version of default grass
@@ -595,6 +606,7 @@ All are just copies from the corresponding ones from Rejuvenation
   - Adds Cherry Blossom for Sensei's Garden
   - Adds new dark window
   - Adds new burned stone barrier
+  - Updated Kenneth graphics
 - **"SheridanInside"**
   - Copied from different parts of `"Multi-Interiors"` from Rejuvenation & `"GearenInteriors"` from the original Where Love Lies
   - Adds more furniture
