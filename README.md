@@ -269,7 +269,7 @@ General:
 - **Map025 - Thief's Stronghold (Inside)**
   - Fixed some spelling mistakes
   - Edited event `(14|39)` for correct connection to the new `Thief's Stronghold` (Outside)
-  - Edited event `(14|39)` for correct connection to the new `Thief's Stronghold` (Outside)
+  - Edited event `(33|4), (45|4) & (41|7)` for correct connection to the new `Forest Cliff`
   - When "turning back time" player will be positioned at entered entrance
 - **Map026 - Sheridan Village (Stage 1)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
@@ -310,15 +310,18 @@ General:
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated events `(44|18)`, `(47|18)` for new position
   - New after battle dialog for `(25|36)`
+  - Removed Ultra Ball Item
+  - Adds new dialog concerning going to Route 3 while on the way to Route 2
 - **Map039 - Sheridan Arena (After Timeskip)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
-  - Updated events `(20|11)`, `(20|32)` & `(27|32)` for new positions
+  - Updated events `(20|13)`, `(20|34)` & `(27|34)` for new positions
   - Fixed some spelling mistakes
 - **Map040 - Sheridan Village (Inside - After Timeskip)**
   - Updated to match `"Map425" (Sheridan Village)` from Rejuvenation
   - Updated events `(8|43)`, `(38|10)` & `(12|78)` for new positions
   - Changed dialog for inn ownership
   - Fixed some spelling mistakes
+  - Following pokemon compatible stairs
 - **Map041 - Sensei's Garden**
   - Updated to match `"Map426" (Sensei's Garden)` from Rejuvenation
 - **Map042 - Amethyst Tunnels (Sheridan Entrance)**
@@ -328,6 +331,10 @@ General:
   - Fixed a spelling mistake
 - **Map044 - Amethyst Tunnels (Hole)**
   - Updated to match `"Map4" (Amethyst Cave)` from Rejuvenation
+  - Added dialog for before Kenneth goes away again for event `(11|13)`
+  - Fixed trigger for first page of event `(21|39)`
+- **Map046 - Amethyst Dungeon (Broken Bridge)**
+  - Fixes small inconsistency in event `(43|27)`
 - **Map049 - ??? (Amethyst Grotto)**
   - Updated to match `"Map488" (Amethyst Grotto)` from Rejuvenation
   - Updated event `(23|30)` for new position
@@ -339,6 +346,7 @@ General:
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated events `(40|17)` & `(50|35)` for new positions
   - Fixed a spelling mistake
+  - Fixed a line skip
 - **Map052 - FIGHT AREA**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated events `(5|10)`, `(5|4)`, `(30|8)`, `(10|37)` for new positions (UNTESTED)
@@ -354,9 +362,10 @@ General:
   - Fixed a spelling mistake
 - **Map056 - Route 2**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
-  - Updated event `(79|37)` & `(58|28)` move routes for different space (UNTESTED)
+  - Updated event `(79|37)`, `(58|28)` & `(79|27)` move routes for different space (UNTESTED)
   - Added event `(56|63)` & `(57|62)` to aknowledge the Kecleon Bazaar
   - Fixed teleport in event `(58|28)`
+  - Going under waterfalls & jumping to the tree supports following pokémon
   - For alternate route:
     - Place non-traversable rail at `(69|61)`
 	- Remove trees at `(47|65)` & `(45|70)`
@@ -364,13 +373,16 @@ General:
 	- In `Map118` place traversable rail at `(10|15)`
 - **Map057 - Wispy Tower**
   - Updated to match `"Map102" (Wispy Tower)` from Rejuvenation (recolored some trees)
+  - Fixed teleport in event `(16|42)`
 - **Map060 - Icefall Cave**
   - Fixed a spelling mistake
 - **Map063 - Spring of Purification (Timeskip & Present)**
   - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
-  - Updated event `(19|25)` for new position
+  - Updated event `(19|25)` for new position & adds Cella crying
 - **Map064 - Carotos Pinnacle (Apparations)**
   - Fixed a spelling mistake
+- **Map065 - Aelita Cutscene**
+  - Fixed teleport in event `(13|17)`
 - **Map66 - Wedding Cutscene (Rebuilding)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation  
   - Updated event `(20|9)` for new position
@@ -396,11 +408,13 @@ General:
   - Changed dialog for opening gate
   - Changed dialog for Eldest's location
   - Changed trainer dialog for `(27|17)`
+  - Removed Ultra Ball Item
 - **Map072 - Sheridan Village (Inside - Present)**
   - Updated to match `"Map425" (Sheridan Village)` from Rejuvenation
   - Updated events `(12|78)`, `(7|76)`, `(17|73)`, `(56|7)`, `(17|34)` for new positions
   - Fixed starting over sprite for `(59|29)`
   - Fixed some spelling mistakes
+  - Following pokemon compatible stairs
 - **Map073 - Help Plaza**
   - Updated to match `"Map15" (Help Plaza)` from Rejuvenation
   - Updated event `(9|10)` for new position
@@ -441,6 +455,86 @@ General:
 - **Map118 - Gemstream Mine**
   - Added based on `Map133 (Gemstream Mine)` to have a way to the tree in the new `Map056 (Route 2)`
   - Edited event `(31|37)` because the exit is blocked
+</details>
+
+### Images
+
+<details>
+  <summary>Autotiles</summary>
+
+- **"DirtDark"**
+  - Copy from Rejuvenation
+- **"BurntGrassSheridan"**
+  - Edited copy of `GrassSheridan` to match the actual floor
+</details>
+
+<details>
+  <summary>Battlebacks</summary>
+
+All are just copies from the corresponding ones from Rejuvenation
+</details>
+
+<details>
+  <summary>Characters</summary>
+
+- **"MC_Aelita1"**
+  - Copy of `Aelita` from Rejuvenation
+- **"MC_Aelita2"**
+  - Copy of `Aelita_7` from Rejuvenation
+- **"MC_Anju"**
+  - Copy of `trchar205` from Rejuvenation  
+- **"MC_Cella_1_Crying"**
+  - Edited copy of `MC_Cella_1`
+- **"MC_Cella_2"**
+  - Copy of `trchar069` from Rejuvenation
+- **"MC_Cella3"**
+  - Copy of `trchar069_4` from Rejuvenation
+- **"MC_Chasity2"**
+  - Edited copy of `Venam's Mom` from Rejuvenation
+- **"MC_Jan"**
+  - Copy of `trchar220` from Rejuvenation
+- **"MC_Jan"**
+  - Copy of `trchar220` from Rejuvenation
+- **"MC_Madelis"**
+  - Copy of `trchar079` from Rejuvenation
+- **"MC_Nymiera"**
+  - Copy of `trchar126` from Rejuvenation
+- **"MC_Taelia_6_2"**
+  - Sligthly edited copy of `MC_Taelia_6` with another crawling pose
+- **"MC_Vivian"**
+  - Copy of `trchar268` from Rejuvenation
+- **"Object TM Ball"**
+  - Copy from Rejuvenation
+- **"object_doors"**
+  - Copy from Rejuvenation
+- **"Object_Doors_2"**
+  - Copy from Rejuvenation
+- **"object_firelight"**
+  - Copy from Rejuvenation
+- **"Object_Gate_1"**
+  - Copy from Rejuvenation
+- **"Object_Doors_2"**
+  - Combination of different tiles from `Sheridan_2` to create a disappearing wall
+- **"streetlights_1"**
+  - Copy from Rejuvenation
+- **"trchar025_on_scaffold"**
+  - Copy from different parts of `GearenCity Real` to create disappearing workers
+</details>
+
+<details>
+  <summary>Panoramas</summary>
+
+- **"hiddenforestbg"**
+  - New images based on new `Hidden Forest` environment for `"Cliffside Grave"` backdrop
+</details>
+
+<details>
+  <summary>Pictures</summary>
+
+- **"TheEnd_1", "TheEnd_2" & "TheEnd_3"**
+  - New images based on new `Route 2` environment
+- **"CarvedTree"**
+  - Slighly edited zoomed in copy of the [chapter 2 intro image](https://imgur.com/imtK2xM) by Zumi
 </details>
 
 <details>
@@ -506,20 +600,28 @@ General:
   - Adds more furniture
   - Custom desk and custom furniture extensions
   - Adds custom destroyed table
+  - Adds custom old/destroyed flooring, walls, and carpet
+  - Adds custom broken banister
 </details>
 
-<details>
-  <summary>Pictures</summary>
-
-- **"TheEnd_1", "TheEnd_2" & "TheEnd_3"**
-  - New images based on new `Route 2` environment
-- **"CarvedTree"**
-  - Slighly edited zoomed in copy of the [chapter 2 intro image](https://imgur.com/imtK2xM) by Zumi
-</details>
+### Other
 
 <details>
-  <summary>Panoramas</summary>
+  <summary>Data</summary>
 
-- **"hiddenforestbg"**
-  - New images based on new `Hidden Forest` environment for `"Cliffside Grave"` backdrop
+- **CommonEvents.rxdata**
+  - Fixed a spelling mistake
+- **"connections.dat"**
+  - Removed connection between `"Map14" (Uncharted Field)"` ↔ `"Map15" (Destroyed Village)"`
+  - Removed connection between `"Map15" (Destroyed Village)"` ↔ `"Map21" (Uncharted Woods)"`
+- **"MapInfos.rxdata"**
+  - Added name & parent map for `"Map113" (Uncharted Cave)"`
+  - Added name & parent map for `"Map118" (Gemstream Mine)"`
+- **"metadata.dat"**
+  - Added metadata for `"Map113" (Uncharted Cave)"`
+  - Added metadata for `"Map118" (Gemstream Mine)"`
+- **"System.rxdata"**
+  - Added renamed/new variables/switches
+- **"Tilesets.rxdata"**
+  - Contains all meta information concerning the tilemaps
 </details>
