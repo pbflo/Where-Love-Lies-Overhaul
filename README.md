@@ -26,21 +26,18 @@ The main goal is to update the maps to match the current version of Rejuvenation
 
 - [x] *`Map12 - Uncharted Forest`*
   - [x] More shades of trees (to match `Route 2`)
-- [ ] `Map14 - Uncharted Field`
+- [x] `Map14 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
   - [x] Add `Gemstream Mine` area
-  - [ ] Fix stop under waterfall
 - [x] `Map15 - Destroyed Village`
   - [x] *V13.5* Rebase on `Map432 - River's End`
-  - [ ] Fix stop under bridge from above
 - [x] `Map16 - Uncharted Woods`
   - [x] Rebase on `Map67 - Route 3`
 - [x] `Map17 - Hidden Forest`
   - [x] Rebase on `Map423 - Sheridan Village`
   - [x] Change dialog for building design
-- [ ] `Map18 - Uncharted Cave`
+- [x] `Map18 - Uncharted Cave`
   - [x] *V13.5* Rebase (again) on `Map119 - Carotos Mountain`
-  - [ ] Fix glitchy following pokemon behavior on borders
 - [x] `Map20 - Cella's House`
   - [x] Rebase on `Map425 - Sheridan Village`
 - [x] `Map21 - Uncharted Woods`
