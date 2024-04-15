@@ -192,6 +192,7 @@ General:
   - Fixed some spelling mistakes
   - Changed dialog concerning Worker ID location
   - Workers & Pokémon now disappear at night
+  - Disallowed Pokémon choice cancel
 - **Map003 - Four Island (Departure)**
   - Fixed some spelling mistakes
 - **Map004 - Mysterious Mansion**
