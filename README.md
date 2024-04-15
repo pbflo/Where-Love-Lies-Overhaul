@@ -6,7 +6,7 @@ The main goal is to update the maps to match the current version of Rejuvenation
 ## Installation
 1. Download & unpack [Where Love Lies](https://www.rebornevo.com/forums/topic/34082-version-1-where-love-lies/)
 2. Copy the content of "Changed Files" into the same folder & allow the files to be overwritten
-3. (Optional) Copy the content of "Rejuvenation Integration" into your Rejuvenation 13.5 folder & allow the files to be overwritten
+3. (Optional) Copy the content of "Rejuvenation Integration" into your Rejuvenation v13.5 folder & allow the files to be overwritten
 4. Simply start the game
 
 ## ToDo's
@@ -163,7 +163,6 @@ General:
 - [x] Small Rejuvenation Mod
   - [x] Replacing the WLL images (*`Flashback_WLL2.png`*, *`flashback_WLL3.png`*, `flashback_WLL4.png`, `flashback_WWL1.png`, *`V13Flashback_10.png`*)
   - [x] Reintroducing the gift (first via WLL Detection (see `NewGamePlus.rb`) and if that fails via the password) \[-> original reward: V10 `"Map294" (Central Building)` at `(25|14)`\]
-- [ ] Look for changed music
 <br>
 
 <details>
