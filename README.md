@@ -3,6 +3,12 @@
 ## Goal
 The main goal is to update the maps to match the current version of Rejuvenation (currently V13.5), while changing the text as little as possible, and to fix some bugs, mistakes and issues.
 
+## Installation
+1. Download & unpack [Where Love Lies](https://www.rebornevo.com/forums/topic/34082-version-1-where-love-lies/)
+2. Copy the content of "Changed Files" into the same folder & allow the files to be overwritten
+3. (Optional) Copy the content of "Rejuvenation Integration" into your Rejuvenation 13.5 folder & allow the files to be overwritten
+4. Simply start the game
+
 ## ToDo's
 <details>
   <summary>Chapter 1 - My Departure</summary>
