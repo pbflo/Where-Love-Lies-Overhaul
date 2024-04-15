@@ -379,8 +379,14 @@ General:
 - **Map063 - Spring of Purification (Timeskip & Present)**
   - Updated to match `"Map206" (Spring of Purification)` from Rejuvenation
   - Updated event `(19|25)` for new position & adds Cella crying
+  - Removed a bridge to require surfing (needed on the mountain)
+  - Added dialog for removed bridge
 - **Map064 - Carotos Pinnacle (Apparations)**
   - Fixed a spelling mistake
+  - Fixed teleport in event `(46|25)`
+  - Removed duplicate autorun events
+  - Fixed move route in event `(46|25)`
+  - Added some tile to go behind while surfing
 - **Map065 - Aelita Cutscene**
   - Fixed teleport in event `(13|17)`
 - **Map66 - Wedding Cutscene (Rebuilding)**
@@ -388,7 +394,7 @@ General:
   - Updated event `(20|9)` for new position
 - **Map067 - Sheridan Arena (Present Day After Returning)**
   - Updated to match `"Map424" (Sheridan Arena)` from Rejuvenation
-  - Edited event `(20|18)` for new door animation
+  - Edited event `(20|18)` for new door animation 
   - Fixed teleport in event `(20|18)`
   - Changed dialog for Eldest's location
   - Fixed a spelling mistake
@@ -409,12 +415,15 @@ General:
   - Changed dialog for Eldest's location
   - Changed trainer dialog for `(27|17)`
   - Removed Ultra Ball Item
+  - Adds Rejuvenation quest completion animation to event `(56|42)`
 - **Map072 - Sheridan Village (Inside - Present)**
   - Updated to match `"Map425" (Sheridan Village)` from Rejuvenation
   - Updated events `(12|78)`, `(7|76)`, `(17|73)`, `(56|7)`, `(17|34)` for new positions
   - Fixed starting over sprite for `(59|29)`
   - Fixed some spelling mistakes
   - Following pokemon compatible stairs
+  - Added quest icon event
+  - Adds a "Nothing" option to event `(17|34)`
 - **Map073 - Help Plaza**
   - Updated to match `"Map15" (Help Plaza)` from Rejuvenation
   - Updated event `(9|10)` for new position
@@ -429,6 +438,8 @@ General:
   - Fixed teleport in event `(12|8)`
 - **Map084 - Inner Workings (Fixed Connection)**
   - Fixed a spelling mistake
+- **Map085 - Carotos Pinnacle (Fall)**
+  - Fixed a spelling mistake
 - **Map087 - Inner Workings (Fixed Connection)**
   - Fixed a spelling mistake
 - **Map088 - Carotos Pinnacle (True Ending)**
@@ -436,6 +447,7 @@ General:
 - **Map089 - Sheridan Village (Present - End Cutscene)**
   - Updated to match `"Map423" (Sheridan Village)` from Rejuvenation
   - Updated event `(45|32)` for new position
+  - Fixed a line skip
 - **Map090 - Sheridan Village (Present - Current Version)**
   - Copied from `"Map423" (Sheridan Village)` from Rejuvenation
 - **Map091 - Sheridan Arena (True Ending)**
@@ -445,9 +457,11 @@ General:
   - Replaced ending images
   - Fixed teleport in event `(7|7)`
   - Fixed a spelling mistake
+  - Changed event `(7,|7)` for Cella to actually cry
 - **Map093 - My Memory**
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
   - Updated event `(8|10)` for new position
+  - Fixed a spelling mistake
 - **Map094 - Uncharted Field (Ending)**
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
 - **Map113 - Uncharted Cave**
@@ -471,7 +485,7 @@ General:
 <details>
   <summary>Battlebacks</summary>
 
-All are just copies from the corresponding ones from Rejuvenation
+- All are just copies from the corresponding ones from Rejuvenation
 </details>
 
 <details>
@@ -489,6 +503,8 @@ All are just copies from the corresponding ones from Rejuvenation
   - Copy of `trchar069` from Rejuvenation
 - **"MC_Cella3"**
   - Copy of `trchar069_4` from Rejuvenation
+- **"MC_Cella_3_Crying"**
+  - Edited copy of `trchar069_4` from Rejuvenation
 - **"MC_Chasity2"**
   - Edited copy of `Venam's Mom` from Rejuvenation
 - **"MC_Jan"**
@@ -505,20 +521,10 @@ All are just copies from the corresponding ones from Rejuvenation
   - Sligthly edited copy of `MC_Taelia_6` with another crawling pose
 - **"MC_Vivian"**
   - Copy of `trchar268` from Rejuvenation
-- **"Object TM Ball"**
+- **"Object TM Ball", "object_doors", "Object_Doors_2", "object_firelight", "Object_Gate_1", "QuestBubble" & "streetlights_1"**
   - Copy from Rejuvenation
-- **"object_doors"**
-  - Copy from Rejuvenation
-- **"Object_Doors_2"**
-  - Copy from Rejuvenation
-- **"object_firelight"**
-  - Copy from Rejuvenation
-- **"Object_Gate_1"**
-  - Copy from Rejuvenation
-- **"Object_Doors_2"**
+- **"Object_StoneWall"**
   - Combination of different tiles from `Sheridan_2` to create a disappearing wall
-- **"streetlights_1"**
-  - Copy from Rejuvenation
 - **"trchar025_on_scaffold"**
   - Copy from different parts of `GearenCity Real` to create disappearing workers
 </details>
@@ -533,18 +539,20 @@ All are just copies from the corresponding ones from Rejuvenation
 <details>
   <summary>Pictures</summary>
 
+- **"CarvedTree"**
+  - Slighly edited zoomed in copy of the [chapter 2 intro image](https://imgur.com/imtK2xM) by Zumi
+- **"Chapter3_4" & "Chapter3_7"**
+  - Updated Kenneth graphic
+- **"Chapter4_3" & "Chapter4_6"**
+  - Updated Kenneth graphic
+  - Fixed Alignment
+- **"Portrait", "Portrait_2", "QuestComplete_1", "QuestComplete_2", "TimeGear1", "TimeGear4"**
+  - Copy from Rejuvenation
 - **"TheEnd_1_Overhaul" & "TheEnd_2_Overhaul"**
   - New images based on new `"Map14" (Uncharted Field)` environment
 - **"TheEnd_3_Overhaul"**
   - New images based on new `"Map14" (Uncharted Field)` environment
   - Fixed alignment of text
-- **"CarvedTree"**
-  - Slighly edited zoomed in copy of the [chapter 2 intro image](https://imgur.com/imtK2xM) by Zumi
-- **"Chapter4_3" & "Chapter4_6"**
-  - Updated Kenneth graphic
-  - Fixed Alignment
-- **"Chapter3_4" & "Chapter3_7"**
-  - Updated Kenneth graphic
 </details>
 
 <details>
@@ -616,13 +624,44 @@ All are just copies from the corresponding ones from Rejuvenation
   - Adds custom broken banister
 </details>
 
+### Script
+
+<details>
+  <summary>Surfing Wall Glitch Fix</summary>
+  
+**Description:**  
+When exiting surfing the player goes by two tiles into this direction resulting in the player possibly being placed out of bounds or in an impassible tile or event.
+
+**Fix:**
+```ruby
+alias follower_endSurf pbEndSurf
+def pbEndSurf(xOffset,yOffset)
+  ret = follow_pbEndSurf(xOffset,yOffset)
+  follower_endSurf(xOffset,yOffset)
+  return ret
+end
+```
+
+**Explanation:**  
+The move in class `Game_Player` was not canceled, because the file `"Follower.rb"` overwrote the method `pbEndSurf`, but does not return any value. Therefore the player was moved one tile by dismounting (in the form of a jump) and one tile by the default move action.
+</details>
+
 ### Other
+
+<details>
+  <summary>Audio/SE</summary>
+
+- **"SFX- Star Twinkle.wav" & "SFX-Friendship.wav"**
+  - Copy from Rejuvenation
+</details>
 
 <details>
   <summary>Data</summary>
 
 - **CommonEvents.rxdata**
   - Fixed a spelling mistake
+  - Copied common event `"QuestComplete! (True)"` from Rejuvenation
+  - Copied common event `"QuestCompleteRem"` from Rejuvenation
 - **"connections.dat"**
   - Removed connection between `"Map14" (Uncharted Field)"` ↔ `"Map15" (Destroyed Village)"`
   - Removed connection between `"Map15" (Destroyed Village)"` ↔ `"Map21" (Uncharted Woods)"`
@@ -632,6 +671,8 @@ All are just copies from the corresponding ones from Rejuvenation
 - **"metadata.dat"**
   - Added metadata for `"Map113" (Uncharted Cave)"`
   - Added metadata for `"Map118" (Gemstream Mine)"`
+- **"Scripts.rxdata"**
+  - Contains all scripts (including fixes)
 - **"System.rxdata"**
   - Added renamed/new variables/switches
 - **"Tilesets.rxdata"**
