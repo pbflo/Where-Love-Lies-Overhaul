@@ -156,13 +156,26 @@ The main goal is to update the maps to match the current version of Rejuvenation
 - [x] `Map94 - Uncharted Field`
   - [x] Rebase on `Map199 - Route 2`
 </details>
+
+<details>
+  <summary>Rejuvenation Integration</summary>
+
+- [x] `Replacing the WLL images`
+  - [ ] *`Flashback_WLL2.png`*
+  - [ ] *`flashback_WLL3.png`*
+  - [x] `flashback_WLL4.png`
+  - [x] `flashback_WWL1.png`
+  - [ ] *`V13Flashback_10.png`*
+- [x] `Map294 - Central Building`
+  - [x] Readd WLL Reward
+  - [x] Add Autodetection check
+- [x] `Map68 - Sensei's House`
+  - [x] Rebase on `Map7 - Sensei's House` & `Map424 - Sheridan Arena`
+</details>
 <br>
 
 General: 
 - [x] Fix [Mistakes](Mistakes.md)
-- [x] Small Rejuvenation Mod
-  - [x] Replacing the WLL images (*`Flashback_WLL2.png`*, *`flashback_WLL3.png`*, `flashback_WLL4.png`, `flashback_WWL1.png`, *`V13Flashback_10.png`*)
-  - [x] Reintroducing the gift (first via WLL Detection (see `NewGamePlus.rb`) and if that fails via the password) \[-> original reward: V10 `"Map294" (Central Building)` at `(25|14)`\]
 <br>
 
 <details>
@@ -178,6 +191,12 @@ General:
 </details>
 
 ## List of Changes
+
+<details>
+  <summary><b>Where Love Lies</b></summary>
+  
+### Maps
+  
 <details>
   <summary>Maps</summary>
 
@@ -720,4 +739,50 @@ As far as I understand it was only checked if the files are in the directory and
   - Added renamed/new variables/switches
 - **"Tilesets.rxdata"**
   - Contains all meta information concerning the tilemaps
+</details>
+<hr>
+</details>
+
+<details>
+  <summary><b>Rejuvenation Integration</b></summary>
+  
+### Maps
+ 
+<details>
+  <summary>Maps</summary>
+
+- **Map294 - Central Building**
+  - Edited event `(10|8)` for the reward check (password or auto)
+- **Map475 - Rift Isolated Dream**
+  - Updated to match `"Map7" (Sensei's House)` & `"Map424" (Sheridan Arena)`
+  - Updated events `(20|20), (21|20)` & `(18|54)` for different space
+</details>  
+
+### Images
+
+<details>
+  <summary>Pictures</summary>
+  
+- **"flashback_WWL1"**
+  - Updated to match `"Map2" (Gearen City)` from Where Love Lies
+- **"flashback_WLL4"**
+  - Updated to match `"Map54" (Sheridan Arena)` from Where Love Lies
+</details>
+
+<details>
+  <summary>Tilesets</summary>
+
+- **"Aelita_rift_2"**
+  - Copied from `"Aelita_rift"` from Rejuvenation
+  - Replaced tiles of house and rooms
+</details>
+  
+### Other
+
+<details>
+  <summary>Data</summary>
+
+- **"Tilesets.rxdata"**
+  - Contains all meta information concerning the tilemaps
+</details>
 </details>
