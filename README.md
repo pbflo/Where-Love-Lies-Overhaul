@@ -637,11 +637,18 @@ When exiting surfing the player goes by two tiles into this direction resulting 
 
 **Fix:**
 ```ruby
+$lastpbEndSurfResult = false
+
+alias follower_realEndSurf follow_pbEndSurf
+def follow_pbEndSurf(xOffset,yOffset)
+  return $lastpbEndSurfResult
+end
+
 alias follower_endSurf pbEndSurf
 def pbEndSurf(xOffset,yOffset)
-  ret = follow_pbEndSurf(xOffset,yOffset)
+  $lastpbEndSurfResult = follower_realEndSurf(xOffset,yOffset)
   follower_endSurf(xOffset,yOffset)
-  return ret
+  return $lastpbEndSurfResult
 end
 ```
 
