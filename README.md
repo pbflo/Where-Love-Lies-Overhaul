@@ -652,8 +652,41 @@ def pbEndSurf(xOffset,yOffset)
 end
 ```
 
-**Explanation:**  
+**Explanation of the Bug:**  
 The move in class `Game_Player` was not canceled, because the file `"Follower.rb"` overwrote the method `pbEndSurf`, but does not return any value. Therefore the player was moved one tile by dismounting (in the form of a jump) and one tile by the default move action.
+</details>
+
+<details>
+  <summary>Font Loading Fix</summary>
+  
+**Description:**  
+When loading up the game it might pop up a message, that not all fonts are installed, even though they are.
+
+**Fix:**
+```ruby
+module FontInstaller
+  class <<self
+    alias_method :old_install, :install
+  end
+
+  def self.install 
+    # Check if all fonts already exist
+    fontsExist=true
+    dest=self.getFontFolder()
+    for i in 0...Names.size
+      if !Font.exist?(Names[i])
+        fontsExist=false
+      end
+    end
+    return if fontsExist
+    # Else call install method
+    old_install
+  end
+end
+```
+
+**Explanation of the Bug:**  
+As far as I understand it was only checked if the files are in the directory and not if the font itself was installed. Seemingly the installed fonts have a different name, and therefore they are not found by this check. (Automatic Installation is still broken because writing the new file in copy_file fails)
 </details>
 
 ### Other
