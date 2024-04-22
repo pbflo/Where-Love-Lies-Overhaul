@@ -211,17 +211,21 @@ General:
   - Changed dialog concerning Worker ID location
   - Workers & Pokémon now disappear at night
   - Disallowed Pokémon choice cancel
+  - Union ID now only found by Item Finder when it can be picked up
 - **Map003 - Four Island (Departure)**
   - Fixed some spelling mistakes
 - **Map004 - Mysterious Mansion**
   - Updated to match `"Map250" (Marble Mansion)` from Rejuvenation
   - Changed connections to `"Map2" (Gearen City)`
+  - Updated event `(9|29)` for new position
 - **Map005 - Hidden Ritual**
   - Updated to match `"Map262" (Hidden Ritual)` from Rejuvenation
   - Removes unused touch event
   - Time Capsule can now be found with Item Finder
+  - Made ritual area accessible again
 - **Map006 - Gearen City (Inside)**
   - Changed connections to `"Map2" (Gearen City)`
+  - Fixed missing character nameplate
 - **Map007 - Gearen Apartments**
   - Changed connections to `"Map2" (Gearen City)`
   - Fixed some spelling mistakes
@@ -488,9 +492,12 @@ General:
   - Updated to match `"Map199" (Route 2)` from Rejuvenation
 - **Map113 - Uncharted Cave**
   - Added based on `Map133 (Gemstream Mine)` to have a way to the water in the new `Map014 (Uncharted Field)`
+  - Added music (same as `Uncharted Cave`)
+  - Added encounters (combination of `Uncharted Cave` & `Gemstream Mine (from Rejuvenation)`)
 - **Map118 - Gemstream Mine**
   - Added based on `Map133 (Gemstream Mine)` to have a way to the tree in the new `Map056 (Route 2)`
   - Edited event `(31|37)` because the exit is blocked
+  - Added music (same as `Uncharted Cave`)
 </details>
 
 ### Images
@@ -513,6 +520,8 @@ General:
 <details>
   <summary>Characters</summary>
 
+- **"HealBell"**
+  - Copy from Rejuvenation
 - **"MC_Aelita1"**
   - Copy of `Aelita` from Rejuvenation
 - **"MC_Aelita2"**
