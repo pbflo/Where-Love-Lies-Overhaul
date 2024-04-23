@@ -166,6 +166,7 @@ The main goal is to update the maps to match the current version of Rejuvenation
   - [x] `flashback_WLL4.png`
   - [x] `flashback_WWL1.png`
   - [ ] *`V13Flashback_10.png`*
+  - [x] `AelitaMemory1.bmp`
 - [x] `Map294 - Central Building`
   - [x] Readd WLL Reward
   - [x] Add Autodetection check
@@ -772,6 +773,8 @@ As far as I understand it was only checked if the files are in the directory and
 <details>
   <summary>Pictures</summary>
   
+- **"AelitaMemory1"**
+  - Updated to match `"Map14" (Uncharted Field)` from Where Love Lies
 - **"flashback_WWL1"**
   - Updated to match `"Map2" (Gearen City)` from Where Love Lies
 - **"flashback_WLL4"**
