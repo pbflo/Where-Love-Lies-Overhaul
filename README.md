@@ -570,6 +570,22 @@ General:
 <details>
   <summary>Pictures</summary>
 
+<ul><li><details>
+  <summary>Summary</summary>
+  
+- **"summary1", "summary2", "summary3", "summary4", "summary5", "summary5details", "summary5learning", "summaryEgg", "summaryShadow"**
+  - Copied from Rejuvenation
+- **"summary4learning"**
+  - Copied from `"summary5learning"` from Rejuvenation
+</details></li>
+
+<li><details>
+  <summary>Battle</summary>
+  
+- **All**
+  - Copied from Rejuvenation
+</details></li></ul>
+
 - **"CarvedTree"**
   - Slighly edited zoomed in copy of the [chapter 2 intro image](https://imgur.com/imtK2xM) by Zumi
 - **"Chapter3_4" & "Chapter3_7"**
