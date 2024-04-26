@@ -180,7 +180,7 @@ General:
 <br>
 
 <details>
-  <summary>Maps, that do not need to be changed but are based on/copies other ones</summary>
+  <summary>Maps, that do not need to be changed but are based on/copies of other ones</summary>
 
 | WLL Map                  | Rejuv Map                 |
 |--------------------------|---------------------------|
@@ -541,8 +541,12 @@ General:
   - Edited copy of `Venam's Mom` from Rejuvenation
 - **"MC_Jan"**
   - Copy of `trchar220` from Rejuvenation
-- **"Boy_run_1", "Boy_run_2", "boy_surf_1", "boy_surf_2", "Boy_walk_1", "Boy_walk_2", "MC_Kenneth6" & "MC_Kenneth7"**
+- **"Boy_run_1", "Boy_run_2", "boy_surf_1", "boy_surf_2", "Boy_walk_1", "Boy_walk_2", "MC_Kenneth6", "MC_Kenneth7" & "trchar000_1"**
   - Edited copy of `Keta` from Rejuvenation
+- **"trback000_1", "trback002" & "trback003"**
+  - Edited copy of `trback132` from Rejuvenation
+- **"trback000"**
+  - Edited copy of `trback000` from Where Love Lies to match the skintone of `Trainer133` and eyes from `trback132` from Rejuvenation
 - **"MC_Jan"**
   - Copy of `trchar220` from Rejuvenation
 - **"MC_Madelis"**
@@ -557,8 +561,72 @@ General:
   - Copy from Rejuvenation
 - **"Object_StoneWall"**
   - Combination of different tiles from `Sheridan_2` to create a disappearing wall
+- **"trainer006"**
+  - Copy of `trainer012` from Rejuvenation
+- **"trainer007"**
+  - Copy of `trainer013` from Rejuvenation
+- **"trainer010"**
+  - Copy of `trainer018` from Rejuvenation
+- **"trainer013"**
+  - Copy of `trainer016` from Rejuvenation
+- **"trainer015"**
+  - Copy of `trainer019` from Rejuvenation
+- **"trainer018"**
+  - Copy of `trainer021` from Rejuvenation
+- **"trainer020"**
+  - Copy of `trainer022` from Rejuvenation
+- **"trainer023"**
+  - Copy of `trainer025` from Rejuvenation
+- **"trainer025"**
+  - Copy of `trainer023` from Rejuvenation
+- **"trainer028"**
+  - Copy of `trainer036` from Rejuvenation
+- **"trainer031" & "trainer064"**
+  - Copy of `trainer027` from Rejuvenation
+- **"trainer032" & "trainer065"**
+  - Copy of `trainer040` from Rejuvenation
+- **"trainer033"**
+  - Copy of `trainer041` from Rejuvenation
+- **"trainer034"**
+  - Copy of `trainer042` from Rejuvenation
+- **"trainer035" & "trainer066"**
+  - Copy of `trainer028` from Rejuvenation
+- **"trainer036" & "trainer067"**
+  - Copy of `trainer029` from Rejuvenation
+- **"trainer037"**
+  - Copy of `trainer024` from Rejuvenation
+- **"trainer038"**
+  - Copy of `trainer037` from Rejuvenation
+- **"trainer039"**
+  - Copy of `trainer038` from Rejuvenation
+- **"trainer040"**
+  - Copy of `trainer039` from Rejuvenation
+- **"Trainer061"**
+  - Copy of `Trainer154` from Rejuvenation
+- **"trainer068"**
+  - Copy of `trainer030` from Rejuvenation
+- **"trchar006"**
+  - Copy of `trchar020` from Rejuvenation
+- **"trchar007", "trchar010", "trchar015", "trchar031", "trchar033", "trchar034", "trchar035", "trchar036", "trchar037", "trchar039", "trchar040"**
+  - Copy from Rejuvenation
+- **"trchar018" & "trchar026"**
+  - Copy of `trchar018` from Rejuvenation
 - **"trchar025_on_scaffold"**
   - Copy from different parts of `GearenCity Real` to create disappearing workers
+- **"trchar020"**
+  - Copy of `trchar006` from Rejuvenation
+- **"trchar023"**
+  - Copy of `trchar089_2` from Rejuvenation
+- **"trchar028" & "trchar029"**
+  - Copy of `trchar235` from Rejuvenation
+- **"trchar032" & "trchar065"**
+  - Copy of `trchar032` from Rejuvenation
+- **"trchar038"**
+  - Copy of `trchar021` from Rejuvenation
+- **"trchar063"**
+  - Copy of `trchar055_2` from Rejuvenation
+- **"trchar067"**
+  - Copy of `trchar112` from Rejuvenation
 </details>
 
 <details>
