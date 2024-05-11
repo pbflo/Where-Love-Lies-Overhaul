@@ -568,6 +568,13 @@ General:
 </details>
 
 <details>
+  <summary>Icons</summary>
+  
+- **All**
+  - Copied from Rejuvenation
+</details>
+
+<details>
   <summary>Panoramas</summary>
 
 - **"hiddenforestbg"**
@@ -913,9 +920,13 @@ end
 </details></li>
 
 <li><details>
-  <summary>Good/Bad Move Visualization</summary>
+  <summary>Good/Bad Move & Better Type Visualization</summary>
   
+<details>
+  <summary>Data</summary>
+
 ```ruby
+# Status Mods per field id (based on Field_Effect_Manual)
 $fieldEffectStatusMoves = {
     1 => [PBMoves::CHARGE,PBMoves::EERIEIMPULSE,PBMoves::MAGNETRISE,], #Electric Field
     2 => [PBMoves::COIL,PBMoves::GROWTH,PBMoves::GRASSWHISTLE], #Grassy Terrain
@@ -963,6 +974,382 @@ $fieldEffectStatusMoves = {
     42 => [PBMoves::STRENGTHSAP,PBMoves::FORESTSCURSE,PBMoves::POISONPOWDER,PBMoves::SLEEPPOWDER,PBMoves::GRASSWHISTLE,PBMoves::STUNSPORE], #Bewitched Woods
     43 => [PBMoves::MIRRORMOVE,PBMoves::TAILWIND] #Sky Field
 }
+
+# Type Boosts by Type (based on Field_Effect_Manual)
+$fieldTypeBoosts = {
+    PBTypes::BUG => {
+        15 => { #Forest Field
+            :boost => 1.5,
+            :condition => "self.pbIsSpecial?(type)"
+        },
+        "33_1" => { :boost => 1.5 }, #Flower Garden Field (Stage 2)
+        "33_3" => { :boost => 2.0 } #Flower Garden Field (Stage 4)
+    },
+    PBTypes::DARK => {
+        29 => { #Holy Field
+            :boost => 0.5,
+            :condition => "self.pbIsSpecial?(type)"
+        },
+        34 => { :boost => 1.5 }, #Starlight Arena
+        35 => { :boost => 1.5 }, #New World
+        38 => { :boost => 1.5 }, #Dimensional Field
+        39 => { :boost => 1.2 }, #Frozen Dimensional Field
+        40 => { :boost => 0.7 }, #Haunted Field
+        42 => { :boost => 1.2 } #Bewitched Woods
+    },
+    PBTypes::DRAGON => {
+        3 => { #Misty Terrain
+            :boost => 0.5,
+            :condition => "!opponent.isAirborne?"
+        },
+        25 => { :boost => 1.5 }, #Crystal Cavern
+        29 => { :boost => 1.2 }, #Holy Field
+        31 => { :boost => 2.0 }, #Fairy Tale Field
+        32 => { :boost => 2.0 } #Dragon's Den
+    },
+    PBTypes::ELECTRIC => {
+        1 => { #Electric Field
+            :boost => 1.5,
+            :condition => "!attacker.isAirborne?"
+        },
+        12 => { #Desert Field
+            :boost => 0.5,
+            :condition => "!opponent.isAirborne?"
+        },
+        17 => { :boost => 1.2 }, #Factory Field
+        21 => { :boost => 1.5 }, #Water Surface
+        22 => { :boost => 2.0 }, #Underwater
+        26 => { :boost => 1.3 } #Murkwater Surface
+    },
+    PBTypes::FAIRY => {
+        29 => { :boost => 1.5 }, #Holy Field
+        31 => { :boost => 1.5 }, #Fairy Tale Field
+        34 => { :boost => 1.3 }, #Starlight Arena
+        38 => { :boost => 0.5 }, #Dimensional Field
+        40 => { :boost => 0.7 }, #Haunted Field
+        41 => { :boost => 0.5 }, #Corrupted Cave
+        42 => { :boost => 1.3 } #Bewitched Woods
+    },
+    PBTypes::FIRE => {
+        2 => { #Grassy Terrain
+            :boost => 1.5,
+            :condition => "!opponent.isAirborne?"
+        },
+        7 => { #Volcanic Field
+            :boost => 1.5,
+            :condition => "!attacker.isAirborne?"
+        },
+        11 => { :boost => 0.5 }, #Corrosive Mist Field
+        13 => { :boost => 0.5 }, #Icy Field
+        16 => { :boost => 1.1 }, #Volcanic Top Field
+        21 => { #Water Surface
+            :boost => 0.5,
+            :condition => "!opponent.isAirborne?"
+        },
+        22 => { :boost => 0 }, #Underwater
+        28 => { :boost => 0.5 }, #Snowy Mountain
+        32 => { :boost => 1.5 }, #Dragon's Den
+        "33_2" => { :boost => 1.5 }, #Flower Garden Field (Stage 3)
+        "33_3" => { :boost => 1.5 }, #Flower Garden Field (Stage 4)
+        "33_4" => { :boost => 1.5 }, #Flower Garden Field (Stage 5)
+        39 => { :boost => 0.5 } #Frozen Dimensional Field
+    },
+    PBTypes::FLYING => {
+        23 => { #Cave
+            :boost => 0.5,
+            :condition => "!self.contactMove?"
+        },
+        27 => { :boost => 1.5 }, #Mountain
+        28 => { :boost => 1.5 }, #Snowy Mountain
+        41 => { #Corrupted Cave
+            :boost => 0.5,
+            :condition => "!self.contactMove?"
+        },
+        43 => { :boost => 1.3 } #Sky Field
+    },
+    PBTypes::GHOST => {
+        29 => { :boost => 0.5 }, #Holy Field
+        38 => { :boost => 1.2 }, #Dimensional Field
+        40 => { :boost => 1.3 } #Haunted Field
+    },
+    PBTypes::GRASS => {
+        2 => { #Grassy Terrain
+            :boost => 1.5,
+            :condition => "!attacker.isAirborne?"
+        },
+        7 => { #Volcanic Field
+            :boost => 0.5,
+            :condition => "!opponent.isAirborne?"
+        },
+        15 => { :boost => 1.5 }, #Forest Field
+        "33_1" => { :boost => 1.2 }, #Flower Garden Field (Stage 2)
+        "33_2" => { :boost => 1.5 }, #Flower Garden Field (Stage 3)
+        "33_3" => { :boost => 2.0 }, #Flower Garden Field (Stage 4)
+        "33_4" => { :boost => 3.0 }, #Flower Garden Field (Stage 5)
+        41 => { :boost => 1.2 }, #Corrupted Cave
+        42 => { :boost => 1.3 } #Bewitched Woods
+    },
+    PBTypes::GROUND => {
+        21 => { :boost => 0 }, #Water Surface
+        26 => { :boost => 0 } #Murkwater Surface
+    },
+    PBTypes::ICE => {
+        7 => { :boost => 0.5 }, #Volcanic Field
+        13 => { :boost => 1.5 }, #Icy Field
+        16 => { :boost => 0.5 }, #Volcanic Top Field
+        28 => { :boost => 1.5 }, #Snowy Mountain
+        32 => { :boost => 0.5 }, #Dragon's Den
+        39 => { :boost => 1.5 } #Frozen Dimensional Field
+    },
+    PBTypes::NORMAL => {
+        9 => { :boost => 1.5 }, #Rainbow Field
+        29 => { #Holy Field
+            :boost => 1.5,
+            :condition => "self.pbIsSpecial?(type)"
+        },
+    },  
+    PBTypes::POISON => {
+        8 => { #Swamp Field
+            :boost => 1.5,
+            :condition => "!opponent.isAirborne?"
+        },
+        26 => { :boost => 1.5 }, #Murkwater Surface
+        41 => { :boost => 1.5 } #Corrupted Cave
+    },
+    PBTypes::PSYCHIC => {
+        24 => { :boost => 1.2 }, #Glitch Field
+        29 => { :boost => 1.2 }, #Holy Field
+        34 => { :boost => 1.5 }, #Starlight Arena
+        37 => { #Psychic Terrain
+            :boost => 1.5,
+            :condition => "!attacker.isAirborne?"
+        }
+    },
+    PBTypes::ROCK => {
+        14 => { :boost => 1.5 }, #Rocky Field
+        23 => { :boost => 1.5 }, #Cave
+        25 => { :boost => 1.5 }, #Crystal Cavern
+        27 => { :boost => 1.5 }, #Mountain
+        28 => { :boost => 1.5 }, #Snowy Mountain
+        41 => { :boost => 1.2 } #Corrupted Cave
+    },
+    PBTypes::SHADOW => {
+        38 => { :boost => 1.2 } #Dimensional Field
+    },   
+    PBTypes::STEEL => {
+        31 => { :boost => 1.5 } #Fairy Tale Field
+    },   
+    PBTypes::WATER => {
+        12 => { #Desert Field
+            :boost => 0.5,
+            :condition => "!attacker.isAirborne?"
+        },
+        16 => { #Volcanic Top Field
+            :boost => 0.9,
+            :condition => "self.move!=PBMoves::SCALD && self.move!=PBMoves::STEAMERUPTION"
+        },
+        21 => { :boost => 1.5 }, #Water Surface
+        22 => { :boost => 1.5 }, #Underwater
+        26 => { :boost => 1.5 }, #Murkwater Surface
+        32 => { :boost => 0.5 } #Dragon's Den
+    } 
+}
+
+# Move Boosts by Field (based on Field_Effect_Manual & PokeBattle_Move.rb lines 1489-2312)
+$fieldMoveBoosts = {
+    1 => { #Electric Field
+        2.0 => [PBMoves::MAGNETBOMB],
+        1.5 => [PBMoves::EXPLOSION, PBMoves::SELFDESTRUCT, PBMoves::HURRICANE, PBMoves::SURF, PBMoves::SMACKDOWN, PBMoves::MUDDYWATER, PBMoves::THOUSANDARROWS]       
+    },
+    2 => { #Grassy Terrain
+        1.5 => [PBMoves::FAIRYWIND,PBMoves::SILVERWIND],
+        0.5 => [PBMoves::MUDDYWATER,PBMoves::SURF,PBMoves::EARTHQUAKE,PBMoves::MAGNITUDE,PBMoves::BULLDOZE]
+    },
+    3 => { #Misty Terrain
+        1.5 => [PBMoves::FAIRYWIND,PBMoves::MYSTICALFIRE,PBMoves::MOONBLAST,PBMoves::MAGICALLEAF,PBMoves::DOOMDUMMY,PBMoves::ICYWIND,PBMoves::AURASPHERE,PBMoves::MISTBALL,PBMoves::STEAMERUPTION,PBMoves::DAZZLINGGLEAM,PBMoves::CLEARSMOG,PBMoves::SMOG,PBMoves::SILVERWIND, PBMoves::MOONGEISTBEAM],
+        0.5 => [PBMoves::DARKPULSE,PBMoves::NIGHTDAZE,PBMoves::SHADOWBALL],
+        0 => [PBMoves::SELFDESTRUCT,PBMoves::EXPLOSION]
+    },
+    4 => { #Dark Crystal Cavern
+        2.0 => [PBMoves::PRISMATICLASER],
+        1.5 => [PBMoves::DARKPULSE,PBMoves::NIGHTDAZE,PBMoves::NIGHTSLASH,PBMoves::SHADOWBALL,PBMoves::SHADOWCLAW,PBMoves::SHADOWFORCE,PBMoves::SHADOWSNEAK,PBMoves::SHADOWPUNCH,PBMoves::SHADOWBONE,PBMoves::AURORABEAM,PBMoves::SIGNALBEAM,PBMoves::FLASHCANNON,PBMoves::LUSTERPURGE,PBMoves::DAZZLINGGLEAM,PBMoves::MIRRORSHOT,PBMoves::DOOMDUMMY,PBMoves::TECHNOBLAST,PBMoves::POWERGEM,PBMoves::MOONGEISTBEAM],
+        1.3 => [PBMoves::STOMPINGTANTRUM] #Probably because of mistake (PokeBattle_Move.rb line 3328)
+    },
+    5 => { #Chess Board
+        1.5 => [PBMoves::FAKEOUT,PBMoves::FEINT,PBMoves::FEINTATTACK,PBMoves::STRENGTH,PBMoves::ANCIENTPOWER,PBMoves::PSYCHIC]
+    },
+    6 => { #Big Top Arena
+        2.0 => [PBMoves::PAYDAY],
+        1.5 => [PBMoves::VINEWHIP,PBMoves::POWERWHIP,PBMoves::FIRELASH,PBMoves::FIERYDANCE,PBMoves::PETALDANCE,PBMoves::REVELATIONDANCE,PBMoves::FLY,PBMoves::ACROBATICS,PBMoves::FIRSTIMPRESSION]     
+    },
+    7 => { #Volcanic Field
+        2.0 => [PBMoves::SMOG,PBMoves::CLEARSMOG],
+        1.5 => [PBMoves::SMACKDOWN,PBMoves::THOUSANDARROWS,PBMoves::ROCKSLIDE]     
+    },
+    8 => { #Swamp Field
+        1.5 => [PBMoves::MUDBOMB,PBMoves::MUDSHOT,PBMoves::MUDSLAP,PBMoves::MUDDYWATER,PBMoves::SURF,PBMoves::SLUDGEWAVE,PBMoves::GUNKSHOT,PBMoves::BRINE,PBMoves::SMACKDOWN,PBMoves::THOUSANDARROWS],
+        0 => [PBMoves::SELFDESTRUCT,PBMoves::EXPLOSION]
+    },
+    9 => { #Rainbow Field
+        1.5 => [PBMoves::SILVERWIND,PBMoves::MYSTICALFIRE,PBMoves::DRAGONPULSE,PBMoves::TRIATTACK,PBMoves::SACREDFIRE,PBMoves::FIREPLEDGE,PBMoves::WATERPLEDGE,PBMoves::GRASSPLEDGE,PBMoves::AURORABEAM,PBMoves::JUDGMENT,PBMoves::RELICSONG,PBMoves::HIDDENPOWER,PBMoves::SECRETPOWER,PBMoves::WEATHERBALL,PBMoves::MISTBALL,PBMoves::HEARTSTAMP,PBMoves::MOONBLAST,PBMoves::ZENHEADBUTT,PBMoves::SPARKLINGARIA,PBMoves::FLEURCANNON,PBMoves::PRISMATICLASER],
+        0.5 => [PBMoves::DARKPULSE,PBMoves::NIGHTDAZE,PBMoves::SHADOWBALL],
+        0 => [PBMoves::NIGHTMARE]
+    },
+    10 => { #Corrosive Field
+        2.0 => [PBMoves::GRASSKNOT,PBMoves::ACID,PBMoves::ACIDSPRAY],
+        1.5 => [PBMoves::SMACKDOWN,PBMoves::MUDSLAP,PBMoves::MUDSHOT,PBMoves::MUDDYWATER,PBMoves::MUDBOMB,PBMoves::WHIRLPOOL,PBMoves::THOUSANDARROWS]      
+    },
+    11 => { #Corrosive Mist Field
+        1.5 => [PBMoves::SMOG,PBMoves::CLEARSMOG,PBMoves::ACIDSPRAY,PBMoves::BUBBLE,PBMoves::BUBBLEBEAM,PBMoves::SPARKLINGARIA]
+    },
+    12 => { #Desert Field
+        1.5 => [PBMoves::HEATWAVE,PBMoves::NEEDLEARM,PBMoves::PINMISSILE,PBMoves::DIG,PBMoves::SANDTOMB,PBMoves::THOUSANDWAVES,PBMoves::BURNUP] 
+    },
+    13 => { #Icy Field
+        0.5 => [PBMoves::SCALD,PBMoves::STEAMERUPTION]
+    },
+    14 => { #Rocky Field
+        2.0 => [PBMoves::ROCKSMASH],
+        1.5 => [PBMoves::EARTHQUAKE,PBMoves::MAGNITUDE,PBMoves::ROCKCLIMB,PBMoves::STRENGTH,PBMoves::BULLDOZE,PBMoves::ACCELEROCK]  
+    },
+    15 => { #Forest Field
+        2.0 => [PBMoves::CUT,PBMoves::ATTACKORDER],
+        1.5 => [PBMoves::SLASH,PBMoves::AIRSLASH,PBMoves::GALESTRIKE,PBMoves::FURYCUTTER,PBMoves::AIRCUTTER,PBMoves::PSYCHOCUT],
+        0.5 => [PBMoves::SURF,PBMoves::MUDDYWATER]
+    },
+    16 => { #Volcanic Top Field
+        1.667 => [PBMoves::SCALD,PBMoves::STEAMERUPTION],
+        1.3 => [PBMoves::ERUPTION,PBMoves::HEATWAVE,PBMoves::MAGMASTORM,PBMoves::LAVAPLUME,PBMoves::LAVASURF],
+        1.2 => [PBMoves::OMINOUSWIND,PBMoves::SILVERWIND,PBMoves::RAZORWIND,PBMoves::ICYWIND,PBMoves::GUST,PBMoves::TWISTER,PBMoves::PRECIPICEBLADES,PBMoves::SMOG,PBMoves::CLEARSMOG],
+        0.555 => [PBMoves::SURF,PBMoves::MUDDYWATER,PBMoves::WATERPLEDGE,PBMoves::WATERSPOUT,PBMoves::SPARKLINGARIA],
+        0 => [PBMoves::HAIL]
+    },
+    17 => { #Factory Field
+        2.0 => [PBMoves::FLASHCANNON,PBMoves::GYROBALL,PBMoves::GEARGRIND,PBMoves::MAGNETBOMB],
+        1.5 => [PBMoves::STEAMROLLER,PBMoves::TECHNOBLAST]       
+    },
+    18 => { #Short-circuit Field
+        1.5 => [PBMoves::DAZZLINGGLEAM,PBMoves::SURF,PBMoves::MUDDYWATER,PBMoves::GYROBALL,PBMoves::MAGNETBOMB,PBMoves::FLASHCANNON,PBMoves::GEARGRIND],
+        1.3 => [PBMoves::DARKPULSE,PBMoves::NIGHTDAZE,PBMoves::NIGHTSLASH,PBMoves::SHADOWBALL,PBMoves::SHADOWCLAW,PBMoves::SHADOWFORCE,PBMoves::SHADOWSNEAK,PBMoves::SHADOWPUNCH,PBMoves::SHADOWBONE]
+    },
+    19 => { #Wasteland
+        2.0 => [PBMoves::SPITUP],
+        1.5 => [PBMoves::VINEWHIP,PBMoves::POWERWHIP,PBMoves::MUDBOMB,PBMoves::MUDSLAP,PBMoves::MUDSHOT],
+        1.2 => [PBMoves::OCTAZOOKA,PBMoves::GUNKSHOT,PBMoves::SLUDGE,PBMoves::SLUDGEWAVE,PBMoves::SLUDGEBOMB],
+        0.25 => [PBMoves::MAGNITUDE,PBMoves::EARTHQUAKE,PBMoves::BULLDOZE]
+    },
+    20 => { #Ashen Beach
+        2.0 => [PBMoves::MUDSLAP,PBMoves::MUDSHOT,PBMoves::MUDBOMB,PBMoves::SANDTOMB],
+        1.5 => [PBMoves::STRENGTH,PBMoves::HIDDENPOWER,PBMoves::LANDSWRATH,PBMoves::THOUSANDWAVES,PBMoves::SURF,PBMoves::MUDDYWATER],
+        1.3 => [PBMoves::ZENHEADBUTT,PBMoves::STOREDPOWER,PBMoves::AURASPHERE,PBMoves::FOCUSBLAST],
+        1.2 => [PBMoves::PSYCHIC]
+    },
+    21 => { #Water Surface
+        1.5 => [PBMoves::WHIRLPOOL,PBMoves::DIVE,PBMoves::SURF,PBMoves::MUDDYWATER,PBMoves::SLUDGEWAVE],
+        0 => [PBMoves::SPIKES, PBMoves::TOXICSPIKES]
+    },
+    22 => { #Underwater
+        2.0 => [PBMoves::ANCHORSHOT,PBMoves::SLUDGEWAVE],
+        1.5 => [PBMoves::WATERPULSE],
+        0 => [PBMoves::SUNNYDAY, PBMoves::HAIL, PBMoves::SANDSTORM, PBMoves::RAINDANCE, PBMoves::SHADOWSKY],
+    },
+    23 => { #Cave
+        1.5 => [PBMoves::ROCKTOMB],
+        0 => [PBMoves::SKYDROP]
+    },
+    25 => { #Crystal Cavern
+        1.5 => [PBMoves::POWERGEM,PBMoves::DIAMONDSTORM,PBMoves::ANCIENTPOWER,PBMoves::ROCKTOMB,PBMoves::ROCKSMASH,PBMoves::PRISMATICLASER,PBMoves::MULTIATTACK,PBMoves::JUDGMENT,PBMoves::STRENGTH,PBMoves::ROCKCLIMB],
+        1.3 => [PBMoves::AURORABEAM,PBMoves::SIGNALBEAM,PBMoves::FLASHCANNON,PBMoves::LUSTERPURGE,PBMoves::DAZZLINGGLEAM,PBMoves::MIRRORSHOT,PBMoves::DOOMDUMMY,PBMoves::TECHNOBLAST,PBMoves::MOONGEISTBEAM]
+    },
+    26 => { #Murkwater Surface
+        1.5 => [PBMoves::MUDBOMB,PBMoves::MUDSHOT,PBMoves::MUDSLAP,PBMoves::THOUSANDWAVES,PBMoves::SMACKDOWN,PBMoves::ACID,PBMoves::ACIDSPRAY,PBMoves::BRINE],
+        0 => [PBMoves::SPIKES, PBMoves::TOXICSPIKES]
+    },
+    27 => { #Mountain
+        1.5 => [PBMoves::THUNDER,PBMoves::ERUPTION,PBMoves::AVALANCHE,PBMoves::VITALTHROW,PBMoves::STORMTHROW,PBMoves::CIRCLETHROW,PBMoves::OMINOUSWIND,PBMoves::RAZORWIND,PBMoves::ICYWIND,PBMoves::SILVERWIND,PBMoves::FAIRYWIND,PBMoves::TWISTER]
+    },
+    28 => { #Snowy Mountain
+        2.0 => [PBMoves::ICYWIND],
+        1.5 => [PBMoves::POWDERSNOW,PBMoves::AVALANCHE,PBMoves::VITALTHROW,PBMoves::STORMTHROW,PBMoves::CIRCLETHROW,PBMoves::OMINOUSWIND,PBMoves::RAZORWIND,PBMoves::SILVERWIND,PBMoves::FAIRYWIND,PBMoves::TWISTER],
+        0.5 => [PBMoves::SCALD,PBMoves::STEAMERUPTION]
+    },
+    29 => { #Holy Field
+        1.5 => [PBMoves::MYSTICALFIRE,PBMoves::MAGICALLEAF,PBMoves::JUDGMENT,PBMoves::SACREDFIRE,PBMoves::ANCIENTPOWER],
+        1.3 => [PBMoves::PSYSTRIKE,PBMoves::AEROBLAST,PBMoves::ORIGINPULSE,PBMoves::PRECIPICEBLADES,PBMoves::DRAGONASCENT,PBMoves::DOOMDUMMY,PBMoves::MISTBALL,PBMoves::LUSTERPURGE,PBMoves::PSYCHOBOOST,PBMoves::SPACIALREND,PBMoves::ROAROFTIME,PBMoves::CRUSHGRIP,PBMoves::SECRETSWORD,PBMoves::RELICSONG,PBMoves::HYPERSPACEHOLE,PBMoves::LANDSWRATH,PBMoves::MOONGEISTBEAM,PBMoves::SUNSTEELSTRIKE,PBMoves::PRISMATICLASER,PBMoves::FLEURCANNON,PBMoves::MULTIPULSE]
+    },
+    30 => { #Mirror Arena
+        2.0 => [PBMoves::MIRRORSHOT],
+        1.5 => [PBMoves::AURORABEAM,PBMoves::SIGNALBEAM,PBMoves::FLASHCANNON,PBMoves::LUSTERPURGE,PBMoves::DOOMDUMMY,PBMoves::DAZZLINGGLEAM,PBMoves::TECHNOBLAST,PBMoves::PRISMATICLASER]
+    },
+    31 => { #Fairy Tale Field
+        2.0 => [PBMoves::DRAININGKISS],
+        1.5 => [PBMoves::NIGHTSLASH,PBMoves::LEAFBLADE,PBMoves::PSYCHOCUT,PBMoves::SMARTSTRIKE,PBMoves::SOLARBLADE,PBMoves::MAGICALLEAF,PBMoves::MYSTICALFIRE,PBMoves::ANCIENTPOWER,PBMoves::RELICSONG,PBMoves::SPARKLINGARIA,PBMoves::MOONGEISTBEAM,PBMoves::FLEURCANNON],
+    },
+    32 => { #Dragon's Den
+        2.0 => [PBMoves::SMACKDOWN,PBMoves::THOUSANDARROWS,PBMoves::PAYDAY,PBMoves::DRAGONASCENT],
+        1.5 => [PBMoves::LAVAPLUME,PBMoves::MAGMASTORM,PBMoves::MEGAKICK]
+    },
+    "33_1" => { #Flower Garden Field (Stage 2)
+        1.5 => [PBMoves::CUT]
+    },
+    "33_2" => { #Flower Garden Field (Stage 3)
+        1.5 => [PBMoves::CUT],
+        1.2 => [PBMoves::PETALDANCE,PBMoves::PETALBLIZZARD,PBMoves::FLEURCANNON]
+    },
+    "33_3" => { #Flower Garden Field (Stage 4)
+        1.5 => [PBMoves::CUT,PBMoves::FLEURCANNON,PBMoves::PETALDANCE,PBMoves::PETALBLIZZARD]
+    },
+    "33_4" => { #Flower Garden Field (Stage 5)
+        1.5 => [PBMoves::CUT,PBMoves::FLEURCANNON,PBMoves::PETALDANCE,PBMoves::PETALBLIZZARD]
+    },
+    34 => { #Starlight Arena
+        4.0 => [PBMoves::DOOMDUMMY],
+        2.0 => [PBMoves::DRACOMETEOR,PBMoves::METEORMASH,PBMoves::COMETPUNCH,PBMoves::SPACIALREND,PBMoves::SWIFT,PBMoves::HYPERSPACEHOLE,PBMoves::HYPERSPACEFURY,PBMoves::MOONGEISTBEAM,PBMoves::SUNSTEELSTRIKE],
+        1.5 => [PBMoves::AURORABEAM,PBMoves::SIGNALBEAM,PBMoves::FLASHCANNON,PBMoves::LUSTERPURGE,PBMoves::DAZZLINGGLEAM,PBMoves::MIRRORSHOT,PBMoves::MOONBLAST,PBMoves::TECHNOBLAST,PBMoves::SOLARBEAM],
+    },
+    35 => { #New World
+        4.0 => [PBMoves::DOOMDUMMY],
+        2.0 => [PBMoves::VACUUMWAVE,PBMoves::DRACOMETEOR,PBMoves::METEORMASH,PBMoves::MOONBLAST,PBMoves::COMETPUNCH,PBMoves::SPACIALREND,PBMoves::SWIFT,PBMoves::FUTUREDUMMY,PBMoves::ANCIENTPOWER,PBMoves::HYPERSPACEHOLE,PBMoves::HYPERSPACEFURY],
+        1.5 => [PBMoves::AURORABEAM,PBMoves::SIGNALBEAM,PBMoves::FLASHCANNON,PBMoves::DAZZLINGGLEAM,PBMoves::MIRRORSHOT,PBMoves::EARTHPOWER,PBMoves::POWERGEM,PBMoves::ERUPTION,PBMoves::PSYSTRIKE,PBMoves::AEROBLAST,PBMoves::SACREDFIRE,PBMoves::MISTBALL,PBMoves::LUSTERPURGE,PBMoves::ORIGINPULSE,PBMoves::PRECIPICEBLADES,PBMoves::DRAGONASCENT,PBMoves::PSYCHOBOOST,PBMoves::ROAROFTIME,PBMoves::MAGMASTORM,PBMoves::CRUSHGRIP,PBMoves::JUDGMENT,PBMoves::SEEDFLARE,PBMoves::SHADOWFORCE,PBMoves::SEARINGSHOT,PBMoves::VCREATE,PBMoves::SECRETSWORD,PBMoves::SACREDSWORD,PBMoves::RELICSONG,PBMoves::FUSIONBOLT,PBMoves::FUSIONFLARE,PBMoves::ICEBURN,PBMoves::FREEZESHOCK,PBMoves::BOLTSTRIKE,PBMoves::BLUEFLARE,PBMoves::TECHNOBLAST,PBMoves::OBLIVIONWING,PBMoves::LANDSWRATH,PBMoves::THOUSANDARROWS,PBMoves::THOUSANDWAVES,PBMoves::DIAMONDSTORM,PBMoves::STEAMERUPTION,PBMoves::COREENFORCER,PBMoves::FLEURCANNON,PBMoves::PRISMATICLASER,PBMoves::SUNSTEELSTRIKE,PBMoves::SPECTRALTHIEF,PBMoves::MOONGEISTBEAM,PBMoves::MULTIATTACK]
+    },
+    37 => { #Psychic Terrain
+        1.5 => [PBMoves::HEX,PBMoves::MAGICALLEAF,PBMoves::MYSTICALFIRE,PBMoves::MOONBLAST,PBMoves::AURASPHERE]
+    },
+    38 => { #Dimensional Field
+        1.5 => [PBMoves::DIMTHRASH,PBMoves::DIMPULSE,PBMoves::DIMFLARE,PBMoves::DIMSNARE],
+        1.2 => [PBMoves::DARKPULSE,PBMoves::MOONBLAST],
+        0 => [PBMoves::LUCKYCHANT]
+    },
+    39 => { #Frozen Dimensional Field
+        1.2 => [PBMoves::SURF,PBMoves::MUDDYWATER,PBMoves::WATERPULSE,PBMoves::HYDROPUMP,PBMoves::NIGHTSLASH,PBMoves::DARKPULSE]
+    },
+    40 => { #Haunted Field
+        1.3 => [PBMoves::FLAMEBURST,PBMoves::INFERNO,PBMoves::FIRESPIN] # Probably missing ,PBMoves::FLAMECHARGE (because FlameBurst is duplicate)
+    },
+    41 => { #Corrupted Cave
+        1.2 => [PBMoves::SEEDFLARE]
+    },
+    42 => { #Bewitched Woods
+        1.4 => [PBMoves::ICEBEAM,PBMoves::HYPERBEAM,PBMoves::SIGNALBEAM,PBMoves::AURORABEAM,PBMoves::BUBBLEBEAM,PBMoves::CHARGEBEAM,PBMoves::PSYBEAM,PBMoves::FLASHCANNON,PBMoves::MAGICALLEAF],
+        1.2 => [PBMoves::DARKPULSE,PBMoves::NIGHTDAZE,PBMoves::MOONBLAST]
+    },
+    43 => { #Sky Field
+        1.5 => [PBMoves::ICYWIND,PBMoves::OMINOUSWIND,PBMoves::SILVERWIND,PBMoves::RAZORWIND,PBMoves::FAIRYWIND,PBMoves::AEROBLAST,PBMoves::SKYUPPERCUT,PBMoves::FLYINGPRESS,PBMoves::THUNDERSHOCK,PBMoves::THUNDERBOLT,PBMoves::THUNDER,PBMoves::STEELWING,PBMoves::TWISTER],
+        0 => [PBMoves::EARTHQUAKE,PBMoves::MAGNITUDE,PBMoves::BULLDOZE,PBMoves::ROTOTILLER,PBMoves::DIG,PBMoves::SPIKES,PBMoves::TOXICSPIKES,PBMoves::STICKYWEB]
+    }
+}
+```
+</details>
+
+```ruby
+def getFieldEffectPos
+    fieldeffectpos = $fefieldeffect
+    if fieldeffectpos == 33
+        fieldeffectpos = fieldeffectpos.to_s + "_" + $fecounter.to_s
+    end
+
+    return fieldeffectpos
+end
 
 class FightMenuButtons
     def initialize(index=0,moves=nil,viewport=nil)
@@ -1058,12 +1445,8 @@ class FightMenuButtons
 
     def pbFieldNotesBattle(move)
         return 0 if $field_effects_highlights==1
-        return 0 if !isFieldEffect? 
-        fieldeffectpos = $fefieldeffect
-        if fieldeffectpos == 33
-            fieldeffectpos = fieldeffectpos.to_s + "_" + $fecounter.to_s
-        end
-        return 1 if $fieldEffectStatusMoves[fieldeffectpos] && $fieldEffectStatusMoves[fieldeffectpos].include?(move.id)
+        #return 0 if !isFieldEffect? 
+        return 1 if $fieldEffectStatusMoves[getFieldEffectPos()] && $fieldEffectStatusMoves[getFieldEffectPos()].include?(move.id)
         battle = move.battle
         typeBoost = 1; moveBoost=1
         attacker = battle.battlers.find { |battler| battler.moves.include?(move) }
@@ -1103,19 +1486,34 @@ class FightMenuButtons
 end
 
 class PokeBattle_Move
-    def typeFieldBoost(type,attacker=nil,opponent=nil) #returns multiplier value of field boost
-        #ToDo: convert function
-        return 0
+    def typeFieldBoost(type,attacker=nil,opponent=nil) #Returns Multiplier Value of Field Boost
+        typeboosts = $fieldTypeBoosts[type]
+        return 1 if !typeboosts
+        fieldtype = typeboosts[getFieldEffectPos()]
+        return 1 if !fieldtype || !fieldtype[:boost]
+        return 1 if fieldtype[:boost] && $fefieldeffect == 34 && !(@battle.pbWeather == 0 || @battle.pbWeather == PBWeather::STRONGWINDS) #Starlight Arena
+        
+        if fieldtype[:condition] && attacker && opponent
+            return 1 if !eval(fieldtype[:condition])
+        end
+
+        return fieldtype[:boost]
     end
 
     def moveFieldBoost
-        #ToDo: convert function
-        return 0
-    end
+        fieldmove = $fieldMoveBoosts[getFieldEffectPos()]
+        return 1 if !fieldmove
+        mult = -1
+        fieldmove.each do |boost, moves|
+            if moves.include?(@id)
+                mult = boost
+                break
+            end
+        end
+        return 1 if mult == -1
+        return 1 if mult > -1 && $fefieldeffect == 34 && !(@battle.pbWeather == 0 || @battle.pbWeather == PBWeather::STRONGWINDS) #Starlight Arena
 
-    def fieldTypeChange(attacker,opponent,typemod,return_type=false)
-        #ToDo: convert function
-        return 0
+        return mult
     end
 
     def overlayTypeChange(attacker,opponent,typemod,return_type=false)
@@ -1126,7 +1524,7 @@ class PokeBattle_Move
     def getSecondaryType(attacker)
         secondtype = []
         secondtype.push(PBTypes::FLYING) if [PBMoves::FLYINGPRESS].include?(@id)
-        fieldtype = fieldTypeChange(attacker,nil,nil,true)
+        fieldtype = FieldTypeChange(attacker,nil,nil,true)
         secondtype.push(fieldtype) if fieldtype
         overlaytype = overlayTypeChange(attacker,nil,nil,true)
         secondtype.push(overlaytype) if overlaytype
@@ -1135,6 +1533,133 @@ class PokeBattle_Move
     end
 end
 ```
+
+<details>
+  <summary>Scrapped (mostly) Converted fieldTypeChange Function</summary>
+
+<details>
+  <summary>Data</summary>
+
+```ruby
+# Type Mods per field id per type (based on Field_Effect_Manual)
+# ToDo: Fill
+$fieldTypeMods = {
+    1 => {PBTypes::ELECTRIC => [PBMoves::EXPLOSION]}
+}
+
+# Type Mods per field id per type (based on Field_Effect_Manual)
+# ToDo: Fill
+$fieldTypeAddOns = {
+      10 => {PBTypes::ELECTRIC => [PBTypes::GRASS]}
+}
+```
+</details>
+
+```ruby
+class PBTypes
+    def PBTypes.oneTypeEff(attackType,opponentType)
+        return 2 if opponentType.nil?
+        return 4 if PBTypes.isSuperEffective?(attackType,opponentType)
+        return 1 if PBTypes.isNotVeryEffective?(attackType,opponentType)
+        return 0 if PBTypes.isIneffective?(attackType,opponentType)
+        return 2
+    end
+end
+
+class PokeBattle_Move
+    def pbTypeShort(attacker)
+        pbType(@type,attacker,attacker.pbOppositeOpposing)
+    end
+
+    def getRandomType(except=[])
+        except = [except] if except && !except.is_a?(Array)
+        types=[]
+        for j in 0...PBTypes.getCount
+          types.push(j) if j!= PBTypes::QMARKS && j!= PBTypes::SHADOW && !except.include?(j)
+        end
+        rnd=@battle.pbRandom(types.length)
+        type = types[rnd]
+        return type
+    end
+
+    def getRoll(update_roll: true, maximize_roll: false)
+        case $fefieldeffect
+            when 25 then choices = [PBTypes::FIRE, PBTypes::WATER, PBTypes::GRASS, PBTypes::PSYCHIC] #Crystal Cavern
+            when 18 then choices = [0.8, 1.5, 0.5, 1.2, 2.0] #Short-circuit
+        end
+        result=choices[@roll] # ToDo: Find a solution for @roll
+        @roll = (@roll + 1) % choices.length if update_roll
+        result=choices.max if $fefieldeffect == 18 && maximize_roll #Short-circuit
+        return result
+    end
+
+    def fieldTypeChange(attacker,opponent,typemod,return_type=false)
+        case $fefieldeffect
+            when 9 # Rainbow Field
+                if (pbTypeShort(attacker) == PBTypes::NORMAL) && pbIsSpecial?(pbTypeShort(attacker)) 
+                    moddedtype = @battle.getRandomType(PBTypes::NORMAL)
+                end
+            when 11 # Corrosive Mist Field
+                if (pbTypeShort(attacker) == PBTypes::FLYING) && !pbIsPhysical?(pbTypeShort(attacker))
+                    moddedtype = PBTypes::POISON
+                end
+            when 18 # Shortcircuit Field
+                if (pbTypeShort(attacker) == PBTypes::STEEL) && attacker.ability == PBAbilities::STEELWORKER
+                    moddedtype = PBTypes::ELECTRIC
+                end
+            when 25 # Crystal Cavern
+                if (pbTypeShort(attacker) == PBTypes::ROCK) || (@id == PBMoves::JUDGMENT || @id == PBMoves::ROCKCLIMB || 
+                    @id == PBMoves::STRENGTH || @id == PBMoves::MULTIATTACK || @id == PBMoves::PRISMATICLASER)
+            #moddedtype = getRoll(update_roll: caller_locations.any? {|string| string.to_s.include?("pbCalcDamage")} && !return_type) # ToDo
+                end
+            when 36 # Inverse Field
+                if !return_type
+                    if typemod == 0
+                        typevar1 = PBTypes.oneTypeEff(@type,opponent.type1)
+                        typevar2 = PBTypes.oneTypeEff(@type,opponent.type2)
+                        typevar1 = 1 if typevar1==0
+                        typevar2 = 1 if typevar2==0
+                        typemod = typevar1 * typevar2
+                    end
+                    typemod = 16 / typemod
+                    #inverse field can (and should) just skip the rest
+                    return typemod if !return_type
+                end
+        end
+
+        if !moddedtype
+            typefieldmoves = $fieldTypeMods[$fefieldeffect]
+            if typefieldmoves
+                typefieldmoves.each do |key, value|
+                    if (value.include?(@id)) && !moddedtype
+                        moddedtype = key
+                    end
+                end
+            end
+        end
+        if !moddedtype #if moddedtype is STILL nil
+            currenttype = pbTypeShort(attacker)
+            typefieldtype = $fieldTypeAddOns[$fefieldeffect]
+            if typefieldtype
+                typefieldtype.each do |key, value|
+                    if (value.include?(currenttype)) && !moddedtype
+                        moddedtype = key
+                    end
+                end
+            end
+        end
+        if return_type
+            return moddedtype ? moddedtype : nil
+        else
+            return typemod if !moddedtype
+            newtypemod = pbTypeModifier(moddedtype,attacker,opponent)
+            typemod = ((typemod*newtypemod) * 0.25).ceil
+            return typemod
+        end
+    end
+end
+```
+</details>
 </details></li>
 
 <li><details>
@@ -1370,7 +1895,7 @@ end
 <details>
   <summary>Data</summary>
 
-- **CommonEvents.rxdata**
+- **"CommonEvents.rxdata"**
   - Fixed a spelling mistake
   - Copied common event `"QuestComplete! (True)"` from Rejuvenation
   - Copied common event `"QuestCompleteRem"` from Rejuvenation
@@ -1384,11 +1909,22 @@ end
   - Added metadata for `"Map113" (Uncharted Cave)"`
   - Added metadata for `"Map118" (Gemstream Mine)"`
 - **"Scripts.rxdata"**
-  - Contains all scripts (including fixes)
+  - Contains the script for loading the external scripts (script by [KK20](https://forum.chaos-project.com/index.php?topic=15072.0))
 - **"System.rxdata"**
   - Added renamed/new variables/switches
 - **"Tilesets.rxdata"**
   - Contains all meta information concerning the tilemaps
+</details>
+
+<details>
+  <summary>Scripts</summary>
+
+- **Overhaul_Fixes**
+  - Contains fixes for some common bugs
+- **Overhaul_BattleSystem**
+  - Contains the overrides for the new backported battle system
+- **All Others**
+  - Simply exported from Where Love Lies
 </details>
 <hr>
 </details>
