@@ -16,6 +16,8 @@
 `"GRANDPA: Before you leave, Kenneth. I have a parting gift for you."` → `"GERARD"`?  
 ## Map5 ##
 (38,10) → Unused Player Touch Event?  
+## Map6 ##
+`"How is building a city going to help the citizens of Aevium?"` → Missing `"KENNETH: "`  
 ## Map7 ##
 `"KENNETH: Um, is it okay for me to be in Mika's Cafe's break room?"` → `"Café"`  
 `"Just take it as a farewell gift, okay? Don't ask my anymore questions..."` → `"me"`  
@@ -41,6 +43,7 @@
 (12,51) → Unused Event  
 (39,14) → This trainer is a copy (from 17) and does not make sense  
 ## Map38 ##
+`"2.) I have to go pick up MooMoo Milk from supper later..."` → `"for supper"`  
 (42,43) → Transfers Player to not existing map 206  
 (52,53) → Second event page name changes  
 ## Map39 ##

@@ -413,7 +413,8 @@ General:
   - Fixed teleport in event `(46|25)`
   - Removed duplicate autorun events
   - Fixed move route in event `(46|25)`
-  - Added some tile to go behind while surfing
+  - Added some tiles to go behind while surfing
+  - Improved returning to the mountain in event `(46|39)`
 - **Map065 - Aelita Cutscene**
   - Fixed teleport in event `(13|17)`
 - **Map66 - Wedding Cutscene (Rebuilding)**
@@ -460,6 +461,8 @@ General:
   - Updated to match `"Map7" (Sensei's House)` from Rejuvenation
 - **Map076 - Pokemon Center (Four Island)**
   - Fixed an invalid variable
+- **Map082 - Four Island (After Deagan Fight)**
+  - Improved returning to the mountain transition in event `(16|16)`
 - **Map083 - ??? (Madelis' Room)**
   - Updated to match `"Map34" (Xen Lounge)` from Rejuvenation
   - Fixed teleport in event `(12|8)`
