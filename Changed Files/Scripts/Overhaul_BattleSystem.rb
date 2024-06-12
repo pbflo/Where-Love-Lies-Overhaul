@@ -425,6 +425,11 @@ $fieldMoveBoosts = {
     }
 }
 
+# Overlay Type Mods by Field (based on Field_Effect_Manual & fieldtxt.rb from V13.5)
+$fieldOverlayTypeMods = {
+    1 => { PBTypes::ELECTRIC => [PBMoves::EXPLOSION, PBMoves::SELFDESTRUCT, PBMoves::SMACKDOWN, PBMoves::SURF, PBMoves::MUDDYWATER, PBMoves::HURRICANE, PBMoves::THOUSANDARROWS] }  #Electric Field
+}
+
 # For new Constants
 module PokeBattle_SceneConstants
     # Position and width of HP/Exp bars
@@ -678,7 +683,7 @@ class FightMenuButtons
 
     def pbFieldNotesBattle(move)
         return 0 if $field_effects_highlights==1
-        #return 0 if !isFieldEffect? 
+        return 0 if !isFieldEffect? 
         return 1 if $fieldEffectStatusMoves[getFieldEffectPos()] && $fieldEffectStatusMoves[getFieldEffectPos()].include?(move.id)
         battle = move.battle
         typeBoost = 1; moveBoost=1
@@ -850,9 +855,33 @@ class PokeBattle_Move
     #     end
     # end
 
+    # Ovelay field effects do not seem to be a concept in this version?
     def overlayTypeChange(attacker,opponent,typemod,return_type=false)
-        #ToDo: convert function
-        return 0
+        return nil
+
+        for field in $fieldOverlayTypeMods
+            next if !field.is_a?(Integer)
+            next if $fieldOverlayTypeMods.empty?
+            #next if @battle.state.effects[field] == 0 #ToDo: Check if effect for field is on?
+
+            foundtype = nil
+            $fieldOverlayTypeMods[field].each do |type, moves|
+                if moves.include?(@id)
+                    foundtype = type
+                    break
+                end
+            end
+            moddedtype = foundtype if foundtype
+        end
+
+        if return_type
+            return moddedtype ? moddedtype : nil
+        else
+            return typemod if !moddedtype
+            newtypemod = pbTypeModifier(moddedtype,attacker,opponent)
+            typemod = ((typemod*newtypemod) * 0.25).ceil
+            return typemod
+        end
     end
 
     def getSecondaryType(attacker)
