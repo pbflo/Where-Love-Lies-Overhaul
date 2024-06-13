@@ -415,6 +415,7 @@ General:
   - Fixed move route in event `(46|25)`
   - Added some tiles to go behind while surfing
   - Improved returning to the mountain in event `(46|39)`
+  - Animation for Kenneth holding Kai'ya in event `(46|22)`
 - **Map065 - Aelita Cutscene**
   - Fixed teleport in event `(13|17)`
 - **Map66 - Wedding Cutscene (Rebuilding)**
