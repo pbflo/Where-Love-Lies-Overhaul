@@ -34,9 +34,10 @@ if !Kernel.respond_to?("pbSetResizeFactor")
   $ResizeOffsetY=0
   $ResizeFactorSet=false
 
-  module Graphics
-    def self.snap_to_bitmap; return nil; end
-  end
+  # Removed for Joiplay Support
+  # module Graphics
+  #   def self.snap_to_bitmap; return nil; end
+  # end
 end
 
 
