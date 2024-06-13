@@ -34,5 +34,18 @@ module FontInstaller
   end
 end
 
+# JoiPlay snap_to_bitmap Fix
+module Graphics
+  class <<self
+    alias_method :original_snap_to_bitmap, :snap_to_bitmap if self.method_defined?(:snap_to_bitmap)
+  end
+
+  def self.snap_to_bitmap
+    ret = new_snap_to_bitmap()
+    ret = original_snap_to_bitmap() if ret == nil && defined?(:original_snap_to_bitmap)
+    return ret
+  end
+end
+
 # Mod Support
 Dir["./Data/Mods/*.rb"].each {|file| load File.expand_path(file) }
