@@ -46,6 +46,3 @@ module Graphics
     return ret
   end
 end
-
-# Mod Support
-Dir["./Data/Mods/*.rb"].each {|file| load File.expand_path(file) }

@@ -792,6 +792,20 @@ The method from `Sprite Resizer` uses a .dll for capturing the screen, which doe
 </details>
 
 <details>
+  <summary>More Borders</summary>
+
+**Description:**  
+Adding more speech and text frames from Rejuvenation v13.5.
+
+```ruby
+additionalSpeechFrames = ["speech hgss 21", "speech hgss 29", "speech hgss 30", "speech hgss 31", "speech hgss 32", "speech hgss 33", "speech hgss 34", "speech hgss 35", "speech hgss 36", "speech hgss 37"]
+$SpeechFrames.insert($SpeechFrames.length-1, *additionalSpeechFrames)
+additionalTextFrames = ["Graphics/Windowskins/choice 29", "Graphics/Windowskins/choice 30", "Graphics/Windowskins/choice 31", "Graphics/Windowskins/choice 32", "Graphics/Windowskins/choice 33", "Graphics/Windowskins/choice 35", "Graphics/Windowskins/choice 36", "Graphics/Windowskins/choice 37"]
+$TextFrames.insert($TextFrames.length, *additionalTextFrames)
+```
+</details>
+
+<details>
   <summary>Fight System Overhaul</summary>
   
 **Description:**  
@@ -3037,12 +3051,23 @@ end
 </ul>
 </details>
 
+<details>
+  <summary>Simple Mod Support</summary>
+
+**Description:**  
+Loading script files from `Data/Mods`
+
+```ruby
+Dir["./Data/Mods/*.rb"].each {|file| load File.expand_path(file) }
+```
+</details>
+
 ### Other
 
 <details>
   <summary>Audio/SE</summary>
 
-- **"SFX- Star Twinkle.wav" & "SFX-Friendship.wav"**
+- **All**
   - Copy from Rejuvenation
 </details>
 

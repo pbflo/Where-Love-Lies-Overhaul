@@ -222,16 +222,6 @@ $SpeechFrames=[
   "speech hgss 18",
   "speech hgss 19",
   "speech hgss 20",
-  "speech hgss 21",
-  "speech hgss 29",
-  "speech hgss 30",
-  "speech hgss 31",
-  "speech hgss 32",
-  "speech hgss 33",
-  "speech hgss 34",
-  "speech hgss 35",
-  "speech hgss 36",
-  "speech hgss 37",
   "speech pl 18"
 ]
 
@@ -263,15 +253,7 @@ $TextFrames=[
   "Graphics/Windowskins/choice 25",
   "Graphics/Windowskins/choice 26",
   "Graphics/Windowskins/choice 27",
-  "Graphics/Windowskins/choice 28",
-  "Graphics/Windowskins/choice 29",
-  "Graphics/Windowskins/choice 30",
-  "Graphics/Windowskins/choice 31",
-  "Graphics/Windowskins/choice 32",
-  "Graphics/Windowskins/choice 33",
-  "Graphics/Windowskins/choice 35",
-  "Graphics/Windowskins/choice 36",
-  "Graphics/Windowskins/choice 37"
+  "Graphics/Windowskins/choice 28"
 ]
 
 $VersionStyles=[
