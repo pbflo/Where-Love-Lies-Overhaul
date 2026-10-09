@@ -860,6 +860,17 @@ As far as I understand it was only checked if the files are in the directory and
   - Copied from `"Aelita_rift"` from Rejuvenation
   - Replaced tiles of house and rooms
 </details>
+
+<details>
+  <summary>Characters</summary>
+
+- **"Object_Doors_4"**
+  - Copied from `"Object_Doors_2"` from Rejuvenation
+  - Replaced with a version matching the scribble background of Aelita's Rift
+- **"object_statues"**
+  - Copied from `"object_statues"` from Rejuvenation
+  - Replaced Keta's Outfit
+</details>
   
 ### Other
 
