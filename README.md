@@ -5,7 +5,7 @@ The main goal is to update the maps to match the current version of Rejuvenation
 
 ## Installation
 1. Download & unpack [Where Love Lies](https://www.rebornevo.com/forums/topic/34082-version-1-where-love-lies/)
-2. Copy the content of "Changed Files" into the same folder & allow the files to be overwritten
+2. Copy the content of the ZIP-File into the `Where Love Lies` folder & allow the files to be overwritten
 3. (Optional) Copy the content of "Rejuvenation Integration" into your Rejuvenation v14 folder. The `/patch` folder should be at the level of your `Rejuvenation.exe`.
 4. Simply start the game
 

@@ -1,0 +1,152 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate release notes and ZIP files
+        id: prepare
+        shell: bash
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          import sys
+          import zipfile
+          from pathlib import Path
+
+          # Read the commit that triggered this workflow.
+          with open(os.environ["GITHUB_EVENT_PATH"], encoding="utf-8") as f:
+              event = json.load(f)
+
+          message = event["head_commit"]["message"]
+          title = message.splitlines()[0].strip()
+          description = message.split("\n", 1)[1].strip() if "\n" in message else ""
+
+          # Find the semantic version in the commit title.
+          match = re.search(
+              r"(?<![A-Za-z0-9])v\d+\.\d+\.\d+"
+              r"(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?"
+              r"(?![A-Za-z0-9.-])",
+              title,
+          )
+
+          if not match:
+              sys.exit(f"No semantic version found in commit title: {title}")
+
+          tag = match.group(0)
+
+          # Add a release-channel suffix based on the commit title.
+          if re.search(r"\bAlpha\b", title, re.IGNORECASE):
+              tag += "-alpha"
+          elif re.search(r"\bBeta\b", title, re.IGNORECASE):
+              tag += "-beta"
+          elif re.search(r"\bRelease\b", title, re.IGNORECASE):
+              tag += "-release"
+
+          # Convert the commit description into a consistently bulleted list.
+          changes = []
+          for line in description.splitlines():
+              line = line.strip()
+              if not line:
+                  continue
+              line = re.sub(r"^(?:[-*]\s+|\d+[.)]\s+)", "", line)
+              changes.append(f"- {line}")
+
+          if not changes:
+              changes = ["- No changes were specified in the commit description."]
+
+          # Extract the Installation section from README.md.
+          readme = Path("README.md")
+          if not readme.exists():
+              sys.exit("README.md was not found.")
+
+          readme_lines = readme.read_text(encoding="utf-8").splitlines()
+          installation = []
+          found = False
+          heading_level = None
+
+          for line in readme_lines:
+              heading = re.match(r"^(#{1,6})\s+(.+?)\s*#*\s*$", line)
+
+              if heading:
+                  level = len(heading.group(1))
+                  heading_name = heading.group(2).strip().lower()
+
+                  if not found:
+                      if heading_name == "installation":
+                          found = True
+                          heading_level = level
+                      continue
+
+                  if level <= heading_level:
+                      break
+
+              if found:
+                  installation.append(line)
+
+          if not found:
+              sys.exit('Could not find an "Installation" heading in README.md.')
+
+          installation_text = "\n".join(installation).strip()
+          if not installation_text:
+              sys.exit("The README Installation section is empty.")
+
+          notes = (
+              "##Changes:\n\n"
+              + "\n".join(changes)
+              + "\n\n##Installation:\n\n"
+              + installation_text
+              + "\n"
+          )
+
+          Path("release-notes.md").write_text(notes, encoding="utf-8")
+
+          # Archive folder contents without adding the parent folder itself.
+          def make_zip(folder_name, zip_name):
+              folder = Path(folder_name)
+              if not folder.is_dir():
+                  sys.exit(f"Required directory not found: {folder_name}")
+
+              with zipfile.ZipFile(zip_name, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+                  for path in sorted(folder.rglob("*")):
+                      if path.is_file():
+                          archive.write(path, path.relative_to(folder))
+
+          make_zip("Changed Files", "WLLOverhaul.zip")
+          make_zip("Rejuventation Integration", "Rejuventation Integration.zip")
+
+          # Pass the title and tag to the release-creation step.
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              print(f"title={title}", file=f)
+              print(f"tag={tag}", file=f)
+
+          print(f"Prepared release: {title} ({tag})")
+          PY
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TITLE: ${{ steps.prepare.outputs.title }}
+          RELEASE_TAG: ${{ steps.prepare.outputs.tag }}
+        run: |
+          gh release create "$RELEASE_TAG" \
+            "WLLOverhaul.zip" \
+            "Rejuventation Integration.zip" \
+            --title "$RELEASE_TITLE" \
+            --notes-file release-notes.md \
+            --target "$GITHUB_SHA"
+
